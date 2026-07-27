@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-title">Buscador de Canciones (Spotify)</div>
+  <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px;">
+    Busca cualquier canción en Spotify y añádela directamente a la cola de reproducción del stream.
+  </p>
+  <div style="display: flex; gap: 12px;">
+    <input type="text" id="search-input" placeholder="Nombre de canción o artista..." style="flex: 1; padding: 10px 14px; border-radius: var(--radius-md); border: 1px solid var(--border-card); background: rgba(0,0,0,0.2); color: var(--text-primary); font-family: inherit; font-size: 14px;">
+    <button class="btn btn-primary" onclick="searchSongs()">Buscar</button>
+  </div>
+  <div id="search-results" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;"></div>
+</div>

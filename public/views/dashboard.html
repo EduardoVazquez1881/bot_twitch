@@ -1,0 +1,54 @@
+<div class="main-grid">
+  <!-- Left Column: Spotify Player & Queue -->
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <!-- Spotify Widget Card -->
+    <div class="card">
+      <div class="card-title">Reproductor Spotify</div>
+      <div class="spotify-player">
+        <div class="album-art-container">
+          <img id="album-art" class="album-art" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=80" alt="Album Art">
+        </div>
+        <div class="spotify-track-info">
+          <h3 id="track-name">Cargando canción...</h3>
+          <p id="artist-name">Conectando a Spotify</p>
+        </div>
+        <div class="player-controls">
+          <button class="btn" id="btn-skip" onclick="skipSpotifyTrack()">Saltar Canción</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spotify Queue Card -->
+    <div class="card">
+      <div class="card-title" style="justify-content: space-between;">
+        <span>Cola de Spotify</span>
+        <button class="btn" style="padding: 4px 10px; font-size: 12px;" onclick="fetchQueue()">Actualizar</button>
+      </div>
+      <div id="queue-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto;">
+        <p style="font-size: 13px; color: var(--text-secondary);">No hay canciones en la cola.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Subtitles & Chat Live Stream -->
+  <div class="card" style="height: 100%;">
+    <div class="card-title" style="justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+      <span>Subtítulos & Actividad</span>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="log-filters">
+          <button class="filter-btn active" onclick="filterLogs('all')">Todos</button>
+          <button class="filter-btn" onclick="filterLogs('chat')">Chat</button>
+          <button class="filter-btn" onclick="filterLogs('tts')">Voz</button>
+          <button class="filter-btn" onclick="filterLogs('system')">Sistema</button>
+        </div>
+        <span style="font-size: 12px; color: var(--text-muted);" id="event-count">Eventos: 0</span>
+      </div>
+    </div>
+    
+    <div class="log-box" id="log-box">
+      <div class="log-entry system">
+        <strong>[SISTEMA]</strong> Panel de control inicializado correctamente. Esperando eventos...
+      </div>
+    </div>
+  </div>
+</div>

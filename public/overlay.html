@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBS Overlay</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: transparent;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+    }
+    .widget {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(15, 18, 35, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 12px 18px;
+      max-width: 460px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+    .album-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #1a1d2e;
+    }
+    .info { overflow: hidden; }
+    .label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #00f2fe;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 2px;
+    }
+    .track {
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .artist {
+      font-size: 12px;
+      color: #8b8fa3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .subtitle-box {
+      display: none;
+      margin-top: 10px;
+      background: rgba(10, 12, 22, 0.92);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 15px;
+      max-width: 500px;
+    }
+    .subtitle-box .speaker { color: #00f2fe; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <div class="widget" id="spotify-widget">
+    <img class="album-img" id="album-art" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52'%3E%3Crect fill='%231a1d2e' width='52' height='52'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%2300f2fe' font-size='20'%3E♫%3C/text%3E%3C/svg%3E" alt="">
+    <div class="info">
+      <div class="label">♫ Sonando en Spotify</div>
+      <div class="track" id="track-name">Esperando canción...</div>
+      <div class="artist" id="artist-name">Reproduce música en Spotify</div>
+    </div>
+  </div>
+
+  <div class="subtitle-box" id="subtitle-box">
+    <span class="speaker" id="subtitle-speaker">Bot</span>:
+    <span id="subtitle-text"></span>
+  </div>
+
+  <script>
+    var subtitleTimer = null;
+
+    function updateWidget(data) {
+      if (data && data.track) {
+        document.getElementById('track-name').textContent = data.track;
+        document.getElementById('artist-name').textContent = data.artist || '';
+        if (data.albumArt) {
+          document.getElementById('album-art').src = data.albumArt;
+        }
+      }
+    }
+
+    function showSub(speaker, text) {
+      var box = document.getElementById('subtitle-box');
+      document.getElementById('subtitle-speaker').textContent = speaker;
+      document.getElementById('subtitle-text').textContent = text;
+      box.style.display = 'block';
+      if (subtitleTimer) clearTimeout(subtitleTimer);
+      subtitleTimer = setTimeout(function() { box.style.display = 'none'; }, 7000);
+    }
+
+    // Fetch initial state
+    function init() {
+      try {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/api/status', true);
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            if (data && data.spotify) updateWidget(data.spotify);
+          }
+        };
+        xhr.send();
+      } catch(e) {}
+
+      // SSE for live updates
+      try {
+        var es = new EventSource('/api/events');
+        es.addEventListener('spotify', function(e) {
+          updateWidget(JSON.parse(e.data));
+        });
+        es.addEventListener('status', function(e) {
+          var d = JSON.parse(e.data);
+          if (d.spotify) updateWidget(d.spotify);
+        });
+        es.addEventListener('tts', function(e) {
+          var d = JSON.parse(e.data);
+          showSub(d.speaker || 'Bot', d.text);
+        });
+      } catch(e) {}
+    }
+
+    // Start on load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>

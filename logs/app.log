@@ -1,0 +1,1003 @@
+[2026-07-27 12:09:22] [INFO]: ====================================================
+[2026-07-27 12:09:22] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:09:22] [INFO]: ====================================================
+[2026-07-27 12:09:22] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:09:22] [INFO]: Generando certificado SSL autofirmado para localhost...
+[2026-07-27 12:09:22] [ERROR]: Error inicializando TwitchChatBot: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-07-27 12:09:22] [WARN]: Reintentando conexión al chat (intento 1/5) en 5s...
+[2026-07-27 12:09:27] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:09:27] [INFO]: Generando certificado SSL autofirmado para localhost...
+[2026-07-27 12:09:27] [ERROR]: Error inicializando TwitchChatBot: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-07-27 12:09:27] [WARN]: Reintentando conexión al chat (intento 2/5) en 10s...
+[2026-07-27 12:10:27] [INFO]: Generando certificado SSL autofirmado para localhost...
+[2026-07-27 12:10:27] [INFO]: Certificado SSL autofirmado generado y guardado.
+[2026-07-27 12:10:34] [INFO]: ====================================================
+[2026-07-27 12:10:34] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:10:34] [INFO]: ====================================================
+[2026-07-27 12:10:34] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:10:34] [INFO]: Certificados SSL existentes cargados desde disco.
+[2026-07-27 12:10:34] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:10:34] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=your_twitch_client_id_here&redirect_uri=https%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:41:03] [INFO]: ====================================================
+[2026-07-27 12:41:03] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:41:03] [INFO]: ====================================================
+[2026-07-27 12:41:03] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:41:03] [INFO]: Certificados SSL existentes cargados desde disco.
+[2026-07-27 12:41:03] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:41:03] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=https%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:42:56] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:42:57] [INFO]: ====================================================
+[2026-07-27 12:42:57] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:42:57] [INFO]: ====================================================
+[2026-07-27 12:42:57] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:42:57] [INFO]: Certificados SSL existentes cargados desde disco.
+[2026-07-27 12:42:57] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:42:57] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=https%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:43:36] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:43:52] [INFO]: ====================================================
+[2026-07-27 12:43:52] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:43:52] [INFO]: ====================================================
+[2026-07-27 12:43:52] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:43:52] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:43:52] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:44:44] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:47:07] [INFO]: ====================================================
+[2026-07-27 12:47:07] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:47:07] [INFO]: ====================================================
+[2026-07-27 12:47:07] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:47:07] [INFO]: Servidor HTTP de callback iniciado en http://localhost:3000
+[2026-07-27 12:47:07] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:50:57] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:50:58] [INFO]: ====================================================
+[2026-07-27 12:50:58] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:50:58] [INFO]: ====================================================
+[2026-07-27 12:50:58] [INFO]: No se encontraron tokens guardados válidos. Iniciando flujo OAuth 2.0...
+[2026-07-27 12:50:58] [INFO]: Certificados SSL existentes cargados desde disco.
+[2026-07-27 12:50:58] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:50:58] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=https%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat
+[2026-07-27 12:51:05] [INFO]: Intercambiando código de autorización por tokens...
+[2026-07-27 12:51:05] [INFO]: Tokens guardados correctamente en tokens.json
+[2026-07-27 12:51:05] [INFO]: Token de acceso obtenido exitosamente. Expira en: 14543 segundos.
+[2026-07-27 12:51:05] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:51:05] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:51:05] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:51:05] [WARN]: Reintentando conexión al chat (intento 1/5) en 5s...
+[2026-07-27 12:51:11] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14537 segundos.
+[2026-07-27 12:51:11] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:51:11] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:51:11] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:51:11] [WARN]: Reintentando conexión al chat (intento 2/5) en 10s...
+[2026-07-27 12:51:21] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14527 segundos.
+[2026-07-27 12:51:21] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:51:21] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:51:21] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:51:21] [WARN]: Reintentando conexión al chat (intento 3/5) en 15s...
+[2026-07-27 12:51:29] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:51:30] [INFO]: ====================================================
+[2026-07-27 12:51:30] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:51:30] [INFO]: ====================================================
+[2026-07-27 12:51:30] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14517 segundos.
+[2026-07-27 12:51:30] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:51:31] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:51:31] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:51:31] [WARN]: Reintentando conexión al chat (intento 1/5) en 5s...
+[2026-07-27 12:51:35] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:53:17] [INFO]: ====================================================
+[2026-07-27 12:53:17] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:53:17] [INFO]: ====================================================
+[2026-07-27 12:53:17] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14410 segundos.
+[2026-07-27 12:53:17] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:53:18] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:53:18] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:53:18] [WARN]: Reintentando conexión al chat (intento 1/5) en 5s...
+[2026-07-27 12:53:23] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14405 segundos.
+[2026-07-27 12:53:23] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:53:23] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:53:23] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:53:23] [WARN]: Reintentando conexión al chat (intento 2/5) en 10s...
+[2026-07-27 12:53:33] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14394 segundos.
+[2026-07-27 12:53:33] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:53:33] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:53:33] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:53:33] [WARN]: Reintentando conexión al chat (intento 3/5) en 15s...
+[2026-07-27 12:53:49] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 14379 segundos.
+[2026-07-27 12:53:49] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:53:49] [WARN]: Desconectado del chat IRC de Twitch. Razón: Login unsuccessful
+[2026-07-27 12:53:49] [ERROR]: Error inicializando TwitchChatBot: undefined
+[2026-07-27 12:53:49] [WARN]: Reintentando conexión al chat (intento 4/5) en 20s...
+[2026-07-27 12:53:59] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 12:55:42] [INFO]: ====================================================
+[2026-07-27 12:55:42] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 12:55:42] [INFO]: ====================================================
+[2026-07-27 12:55:42] [INFO]: El token actual carece de los siguientes permisos (scopes): chat:read, chat:edit. Re-iniciando flujo OAuth 2.0...
+[2026-07-27 12:55:42] [INFO]: Certificados SSL existentes cargados desde disco.
+[2026-07-27 12:55:42] [INFO]: Servidor HTTPS de callback iniciado en https://localhost:3000
+[2026-07-27 12:55:42] [INFO]: Abriendo navegador automáticamente: https://id.twitch.tv/oauth2/authorize?client_id=nylv2h30u2fxqa0q7i8ctbjpw11415&redirect_uri=https%3A%2F%2Flocalhost%3A3000&response_type=code&scope=user%3Aread%3Achat%20user%3Awrite%3Achat%20chat%3Aread%20chat%3Aedit
+[2026-07-27 12:55:50] [INFO]: Intercambiando código de autorización por tokens...
+[2026-07-27 12:55:50] [INFO]: Tokens guardados correctamente en tokens.json
+[2026-07-27 12:55:50] [INFO]: Token de acceso obtenido exitosamente. Expira en: 13909 segundos.
+[2026-07-27 12:55:50] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 12:55:51] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 12:58:05] [INFO]: Comando !ping detectado de jajaeledu. Respondiendo !pong
+[2026-07-27 13:01:44] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba de voz integrada"
+[2026-07-27 13:57:03] [WARN]: Desconectado del chat IRC de Twitch. Razón: 
+[2026-07-27 13:57:03] [INFO]: Reconectando al servidor de chat de Twitch...
+[2026-07-27 13:57:05] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:19:57] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:19:57] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:19:58] [INFO]: ====================================================
+[2026-07-27 14:19:58] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:19:58] [INFO]: ====================================================
+[2026-07-27 14:19:59] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8860 segundos.
+[2026-07-27 14:19:59] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:19:59] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:20:37] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:20:37] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:20:38] [INFO]: ====================================================
+[2026-07-27 14:20:38] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:20:38] [INFO]: ====================================================
+[2026-07-27 14:20:39] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8820 segundos.
+[2026-07-27 14:20:39] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:20:39] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:20:52] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: aa"
+[2026-07-27 14:21:02] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: audio ejemplo"
+[2026-07-27 14:21:21] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: prueba de audio con voz"
+[2026-07-27 14:23:18] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba voz mujer"
+[2026-07-27 14:23:21] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba voz hombre"
+[2026-07-27 14:23:44] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: !m hola a todos"
+[2026-07-27 14:24:04] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:24:04] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:24:07] [INFO]: ====================================================
+[2026-07-27 14:24:07] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:24:07] [INFO]: ====================================================
+[2026-07-27 14:24:07] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8612 segundos.
+[2026-07-27 14:24:07] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:24:07] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:24:46] [INFO]: ====================================================
+[2026-07-27 14:24:46] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:24:46] [INFO]: ====================================================
+[2026-07-27 14:24:46] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8573 segundos.
+[2026-07-27 14:24:46] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:24:46] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:24:57] [INFO]: ====================================================
+[2026-07-27 14:24:57] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:24:57] [INFO]: ====================================================
+[2026-07-27 14:24:57] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8561 segundos.
+[2026-07-27 14:24:57] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:24:58] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:25:13] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "hola con voz de mujer"
+[2026-07-27 14:25:13] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola con voz de mujer"
+[2026-07-27 14:25:57] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Hola, esta es una prueba con la voz de Beatriz"
+[2026-07-27 14:26:07] [ERROR]: Error generando TTS para "Hola, esta es una prueba con la voz de Beatriz": undefined
+[2026-07-27 14:26:23] [INFO]: ====================================================
+[2026-07-27 14:26:23] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:26:23] [INFO]: ====================================================
+[2026-07-27 14:26:23] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8475 segundos.
+[2026-07-27 14:26:23] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:26:24] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:26:38] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:26:38] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:26:39] [INFO]: ====================================================
+[2026-07-27 14:26:39] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:26:39] [INFO]: ====================================================
+[2026-07-27 14:26:40] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8459 segundos.
+[2026-07-27 14:26:40] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:26:40] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:26:51] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "hola"
+[2026-07-27 14:26:51] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola"
+[2026-07-27 14:27:02] [ERROR]: Error generando TTS para "hola": undefined
+[2026-07-27 14:27:11] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "hola con voz de mujer"
+[2026-07-27 14:27:11] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola con voz de mujer"
+[2026-07-27 14:27:21] [ERROR]: Error generando TTS para "hola con voz de mujer": undefined
+[2026-07-27 14:28:08] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Hola, prueba de reproduccion directa de audio"
+[2026-07-27 14:28:19] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:28:20] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:28:21] [INFO]: ====================================================
+[2026-07-27 14:28:21] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:28:21] [INFO]: ====================================================
+[2026-07-27 14:28:21] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8358 segundos.
+[2026-07-27 14:28:21] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:28:21] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:28:43] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "hola con voz de hombre"
+[2026-07-27 14:28:43] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola con voz de hombre"
+[2026-07-27 14:28:54] [ERROR]: Error generando TTS para "hola con voz de hombre": undefined
+[2026-07-27 14:28:57] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "olaaaaaaaaaaa"
+[2026-07-27 14:28:57] [INFO]: 🔊 Generando y reproduciendo voz TTS: "olaaaaaaaaaaa"
+[2026-07-27 14:29:07] [ERROR]: Error generando TTS para "olaaaaaaaaaaa": undefined
+[2026-07-27 14:30:13] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba mujer"
+[2026-07-27 14:30:16] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba hombre"
+[2026-07-27 14:30:24] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:30:24] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:30:25] [INFO]: ====================================================
+[2026-07-27 14:30:25] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:30:25] [INFO]: ====================================================
+[2026-07-27 14:30:26] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8233 segundos.
+[2026-07-27 14:30:26] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:30:26] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:30:37] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "hola"
+[2026-07-27 14:30:37] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola"
+[2026-07-27 14:30:45] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "hola"
+[2026-07-27 14:30:45] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola"
+[2026-07-27 14:32:14] [INFO]: ====================================================
+[2026-07-27 14:32:14] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:32:14] [INFO]: ====================================================
+[2026-07-27 14:32:14] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8125 segundos.
+[2026-07-27 14:32:14] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:32:14] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:32:45] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:32:45] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:32:46] [INFO]: ====================================================
+[2026-07-27 14:32:46] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:32:46] [INFO]: ====================================================
+[2026-07-27 14:32:46] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 8092 segundos.
+[2026-07-27 14:32:46] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:32:47] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:32:55] [INFO]: Lectura automática (Voz General) de jajaeledu: "ola"
+[2026-07-27 14:32:55] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: ola"
+[2026-07-27 14:33:03] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "hola"
+[2026-07-27 14:33:05] [ERROR]: Error generando TTS para "jajaeledu dice: ola": Timed out
+[2026-07-27 14:33:05] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola"
+[2026-07-27 14:33:16] [INFO]: Lectura automática (Voz General) de jajaeledu: "se esucha?"
+[2026-07-27 14:33:16] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: se esucha?"
+[2026-07-27 14:33:40] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola es una prueba de audio a ver como se escucha"
+[2026-07-27 14:33:40] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: hola es una prueba de audio a ver como se escucha"
+[2026-07-27 14:33:50] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "hola"
+[2026-07-27 14:33:50] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola"
+[2026-07-27 14:34:00] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "hola es prueba de audio"
+[2026-07-27 14:34:00] [INFO]: 🔊 Generando y reproduciendo voz TTS: "hola es prueba de audio"
+[2026-07-27 14:36:05] [INFO]: ====================================================
+[2026-07-27 14:36:05] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:36:05] [INFO]: ====================================================
+[2026-07-27 14:36:06] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7893 segundos.
+[2026-07-27 14:36:06] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:36:06] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:36:40] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:36:40] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:36:45] [INFO]: ====================================================
+[2026-07-27 14:36:45] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:36:45] [INFO]: ====================================================
+[2026-07-27 14:36:45] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7854 segundos.
+[2026-07-27 14:36:45] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:36:45] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:36:52] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "hola"
+[2026-07-27 14:36:52] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: hola"
+[2026-07-27 14:36:59] [INFO]: Comando !m (Voz Mujer) de jajaeledu: "ola"
+[2026-07-27 14:36:59] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: ola"
+[2026-07-27 14:37:10] [INFO]: Lectura automática (Voz General) de jajaeledu: "se escucha bien?"
+[2026-07-27 14:37:10] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: se escucha bien?"
+[2026-07-27 14:39:16] [INFO]: ====================================================
+[2026-07-27 14:39:16] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:39:16] [INFO]: ====================================================
+[2026-07-27 14:39:16] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7703 segundos.
+[2026-07-27 14:39:16] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:39:16] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:42:47] [INFO]: ====================================================
+[2026-07-27 14:42:47] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:42:47] [INFO]: ====================================================
+[2026-07-27 14:42:47] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7492 segundos.
+[2026-07-27 14:42:47] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:42:47] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:45:34] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:45:34] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:45:35] [INFO]: ====================================================
+[2026-07-27 14:45:35] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:45:35] [INFO]: ====================================================
+[2026-07-27 14:45:35] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:45:35] [INFO]: No se encontraron tokens guardados de Spotify. Iniciando flujo OAuth 2.0...
+[2026-07-27 14:45:35] [INFO]: Servidor HTTP de callback Spotify iniciado en puerto 3000
+[2026-07-27 14:45:35] [INFO]: Abriendo navegador para autorización de Spotify: https://accounts.spotify.com/authorize?response_type=code&client_id=4f715fd66dac4ae59290e9e9eda2402b&scope=user-read-currently-playing+user-read-playback-state+user-modify-playback-state&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fspotify-callback
+[2026-07-27 14:45:59] [INFO]: ====================================================
+[2026-07-27 14:45:59] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:45:59] [INFO]: ====================================================
+[2026-07-27 14:45:59] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:45:59] [INFO]: No se encontraron tokens guardados de Spotify. Iniciando flujo OAuth 2.0...
+[2026-07-27 14:45:59] [INFO]: Servidor HTTPS de callback Spotify iniciado en puerto 3000
+[2026-07-27 14:45:59] [INFO]: Abriendo navegador para autorización de Spotify: https://accounts.spotify.com/authorize?response_type=code&client_id=4f715fd66dac4ae59290e9e9eda2402b&scope=user-read-currently-playing+user-read-playback-state+user-modify-playback-state&redirect_uri=https%3A%2F%2Flocalhost%3A3000%2Fspotify-callback
+[2026-07-27 14:46:47] [INFO]: ====================================================
+[2026-07-27 14:46:47] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:46:47] [INFO]: ====================================================
+[2026-07-27 14:46:47] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:46:47] [INFO]: No se encontraron tokens guardados de Spotify. Iniciando flujo OAuth 2.0...
+[2026-07-27 14:46:47] [INFO]: Servidor HTTPS de callback Spotify iniciado en puerto 3000
+[2026-07-27 14:46:47] [INFO]: Abriendo navegador para autorización de Spotify: https://accounts.spotify.com/authorize?response_type=code&client_id=4f715fd66dac4ae59290e9e9eda2402b&scope=user-read-currently-playing+user-read-playback-state+user-modify-playback-state&redirect_uri=https%3A%2F%2Flocalhost%3A3000%2Fspotify-callback
+[2026-07-27 14:47:29] [INFO]: ====================================================
+[2026-07-27 14:47:29] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:47:29] [INFO]: ====================================================
+[2026-07-27 14:47:29] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:47:29] [INFO]: No se encontraron tokens guardados de Spotify. Iniciando flujo OAuth 2.0...
+[2026-07-27 14:47:29] [INFO]: Servidor HTTP de callback Spotify iniciado en puerto 8888
+[2026-07-27 14:47:29] [INFO]: Abriendo navegador para autorización de Spotify: https://accounts.spotify.com/authorize?response_type=code&client_id=4f715fd66dac4ae59290e9e9eda2402b&scope=user-read-currently-playing+user-read-playback-state+user-modify-playback-state&redirect_uri=http%3A%2F%2F127.0.0.1%3A8888%2Fcallback
+[2026-07-27 14:47:32] [INFO]: Intercambiando código de autorización por tokens de Spotify...
+[2026-07-27 14:47:32] [INFO]: Tokens de Spotify guardados correctamente en tokens/spotify_tokens.json
+[2026-07-27 14:47:32] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7207 segundos.
+[2026-07-27 14:47:32] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:47:32] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:48:58] [INFO]: Token de Spotify válido. Expira en aprox. 3514 segundos.
+[2026-07-27 14:48:58] [ERROR]: Error obteniendo canción actual de Spotify: Request failed with status code 400
+[2026-07-27 14:48:58] [INFO]: 🔊 Generando y reproduciendo voz TTS: "No hay ninguna canción reproduciéndose en Spotify actualmente."
+[2026-07-27 14:49:24] [INFO]: Token de Spotify válido. Expira en aprox. 3488 segundos.
+[2026-07-27 14:49:24] [ERROR]: Error buscando/añadiendo canción a cola de Spotify: Request failed with status code 400
+[2026-07-27 14:49:49] [INFO]: Token de Spotify válido. Expira en aprox. 3462 segundos.
+[2026-07-27 14:49:49] [ERROR]: Error buscando/añadiendo canción a cola de Spotify: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>400 Bad Request</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Bad Request</h1>
+<h2>Your client has issued a malformed or illegal request.</h2>
+<h2></h2>
+</body></html>
+
+[2026-07-27 14:49:54] [INFO]: Token de Spotify válido. Expira en aprox. 3457 segundos.
+[2026-07-27 14:50:08] [INFO]: Token de Spotify válido. Expira en aprox. 3443 segundos.
+[2026-07-27 14:50:08] [INFO]: Token de Spotify válido. Expira en aprox. 3443 segundos.
+[2026-07-27 14:50:09] [INFO]: Canción añadida a la cola de Spotify: The Night We Met - Lord Huron
+[2026-07-27 14:50:26] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:50:26] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:50:28] [INFO]: ====================================================
+[2026-07-27 14:50:28] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:50:28] [INFO]: ====================================================
+[2026-07-27 14:50:28] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:50:28] [INFO]: Token de Spotify válido. Expira en aprox. 3424 segundos.
+[2026-07-27 14:50:28] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 7031 segundos.
+[2026-07-27 14:50:28] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:50:28] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:50:35] [INFO]: Token de Spotify válido. Expira en aprox. 3416 segundos.
+[2026-07-27 14:50:35] [INFO]: Token de Spotify válido. Expira en aprox. 3416 segundos.
+[2026-07-27 14:50:36] [INFO]: Canción añadida a la cola de Spotify: The Night We Met - Lord Huron
+[2026-07-27 14:50:36] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu añadió a la cola de Spotify: The Night We Met de Lord Huron"
+[2026-07-27 14:50:59] [INFO]: Lectura automática (Voz General) de jajaeledu: "!next"
+[2026-07-27 14:50:59] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: !next"
+[2026-07-27 14:51:17] [INFO]: Token de Spotify válido. Expira en aprox. 3374 segundos.
+[2026-07-27 14:51:17] [INFO]: Canción saltada en Spotify.
+[2026-07-27 14:51:17] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu saltó la canción en Spotify."
+[2026-07-27 14:51:55] [INFO]: Token de Spotify válido. Expira en aprox. 3337 segundos.
+[2026-07-27 14:51:55] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Sonando ahora: The Night We Met de Lord Huron"
+[2026-07-27 14:57:45] [INFO]: Token de Spotify válido. Expira en aprox. 2987 segundos.
+[2026-07-27 14:57:45] [INFO]: Token de Spotify válido. Expira en aprox. 2986 segundos.
+[2026-07-27 14:57:45] [INFO]: Canción añadida a la cola de Spotify: misery. - pupsies
+[2026-07-27 14:57:45] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu añadió a la cola de Spotify: misery. de pupsies"
+[2026-07-27 14:57:58] [INFO]: Token de Spotify válido. Expira en aprox. 2974 segundos.
+[2026-07-27 14:57:58] [INFO]: Canción saltada en Spotify.
+[2026-07-27 14:57:58] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu saltó la canción en Spotify."
+[2026-07-27 14:58:05] [INFO]: Token de Spotify válido. Expira en aprox. 2966 segundos.
+[2026-07-27 14:58:06] [INFO]: Canción saltada en Spotify.
+[2026-07-27 14:58:06] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu saltó la canción en Spotify."
+[2026-07-27 14:58:38] [INFO]: ====================================================
+[2026-07-27 14:58:38] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:58:38] [INFO]: ====================================================
+[2026-07-27 14:58:38] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:58:38] [INFO]: Token de Spotify válido. Expira en aprox. 2933 segundos.
+[2026-07-27 14:58:38] [INFO]: 🌐 Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 14:58:38] [INFO]: 🎬 Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 14:58:38] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 6541 segundos.
+[2026-07-27 14:58:38] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:58:38] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:59:17] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 14:59:17] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 14:59:22] [INFO]: ====================================================
+[2026-07-27 14:59:22] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 14:59:22] [INFO]: ====================================================
+[2026-07-27 14:59:22] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 14:59:22] [INFO]: Token de Spotify válido. Expira en aprox. 2890 segundos.
+[2026-07-27 14:59:22] [INFO]: 🌐 Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 14:59:22] [INFO]: 🎬 Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 14:59:22] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 6497 segundos.
+[2026-07-27 14:59:22] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 14:59:22] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 14:59:30] [INFO]: Token de Spotify válido. Expira en aprox. 2882 segundos.
+[2026-07-27 14:59:37] [INFO]: Token de Spotify válido. Expira en aprox. 2875 segundos.
+[2026-07-27 14:59:37] [INFO]: Token de Spotify válido. Expira en aprox. 2875 segundos.
+[2026-07-27 14:59:57] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola"
+[2026-07-27 14:59:57] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: hola"
+[2026-07-27 15:00:02] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 15:00:06] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola"
+[2026-07-27 15:00:06] [INFO]: [MUTE] TTS Silenciado. Omitiendo audio: "jajaeledu dice: hola"
+[2026-07-27 15:00:09] [INFO]: Lectura automática (Voz General) de jajaeledu: "sdaikfajksf"
+[2026-07-27 15:00:09] [INFO]: [MUTE] TTS Silenciado. Omitiendo audio: "jajaeledu dice: sdaikfajksf"
+[2026-07-27 15:00:15] [INFO]: [MUTE] TTS Silenciado. Omitiendo audio: "Prueba de voz desde la interfaz web."
+[2026-07-27 15:00:19] [INFO]: TTS Activado desde la interfaz web.
+[2026-07-27 15:00:20] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba de voz desde la interfaz web."
+[2026-07-27 15:00:29] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 15:00:30] [INFO]: TTS Activado desde la interfaz web.
+[2026-07-27 15:04:19] [INFO]: Token de Spotify válido. Expira en aprox. 2592 segundos.
+[2026-07-27 15:04:47] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:04:47] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:04:49] [INFO]: ====================================================
+[2026-07-27 15:04:49] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:04:49] [INFO]: ====================================================
+[2026-07-27 15:04:49] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:04:49] [INFO]: Token de Spotify válido. Expira en aprox. 2563 segundos.
+[2026-07-27 15:04:49] [INFO]: 🌐 Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:04:49] [INFO]: 🎬 Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:04:49] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 6170 segundos.
+[2026-07-27 15:04:49] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:04:49] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:04:50] [INFO]: Token de Spotify válido. Expira en aprox. 2561 segundos.
+[2026-07-27 15:04:51] [INFO]: Token de Spotify válido. Expira en aprox. 2561 segundos.
+[2026-07-27 15:04:52] [INFO]: Token de Spotify válido. Expira en aprox. 2559 segundos.
+[2026-07-27 15:04:52] [INFO]: Token de Spotify válido. Expira en aprox. 2559 segundos.
+[2026-07-27 15:04:52] [INFO]: Token de Spotify válido. Expira en aprox. 2559 segundos.
+[2026-07-27 15:04:52] [INFO]: Token de Spotify válido. Expira en aprox. 2559 segundos.
+[2026-07-27 15:04:52] [INFO]: Token de Spotify válido. Expira en aprox. 2559 segundos.
+[2026-07-27 15:05:57] [INFO]: Token de Spotify válido. Expira en aprox. 2495 segundos.
+[2026-07-27 15:05:58] [INFO]: Token de Spotify válido. Expira en aprox. 2494 segundos.
+[2026-07-27 15:05:58] [INFO]: Canción añadida a la cola de Spotify: misery. - pupsies
+[2026-07-27 15:05:58] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu añadió a la cola de Spotify: misery. de pupsies"
+[2026-07-27 15:06:21] [INFO]: Lectura automática (Voz General) de jajaeledu: "!next"
+[2026-07-27 15:06:21] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: !next"
+[2026-07-27 15:06:28] [INFO]: Token de Spotify válido. Expira en aprox. 2464 segundos.
+[2026-07-27 15:06:28] [INFO]: Token de Spotify válido. Expira en aprox. 2463 segundos.
+[2026-07-27 15:06:29] [INFO]: Token de Spotify válido. Expira en aprox. 2463 segundos.
+[2026-07-27 15:06:29] [INFO]: Token de Spotify válido. Expira en aprox. 2462 segundos.
+[2026-07-27 15:06:30] [INFO]: Token de Spotify válido. Expira en aprox. 2462 segundos.
+[2026-07-27 15:07:09] [INFO]: Token de Spotify válido. Expira en aprox. 2422 segundos.
+[2026-07-27 15:07:10] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Próxima canción en cola: Stress Relief de late night drive home"
+[2026-07-27 15:08:26] [INFO]: Token de Spotify válido. Expira en aprox. 2345 segundos.
+[2026-07-27 15:08:27] [INFO]: Token de Spotify válido. Expira en aprox. 2345 segundos.
+[2026-07-27 15:08:27] [INFO]: Token de Spotify válido. Expira en aprox. 2344 segundos.
+[2026-07-27 15:08:28] [INFO]: Token de Spotify válido. Expira en aprox. 2344 segundos.
+[2026-07-27 15:10:03] [INFO]: Token de Spotify válido. Expira en aprox. 2248 segundos.
+[2026-07-27 15:10:03] [INFO]: Canción saltada en Spotify.
+[2026-07-27 15:11:16] [INFO]: ====================================================
+[2026-07-27 15:11:16] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:11:16] [INFO]: ====================================================
+[2026-07-27 15:11:16] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:11:16] [INFO]: Token de Spotify válido. Expira en aprox. 2175 segundos.
+[2026-07-27 15:11:16] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:11:17] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5782 segundos.
+[2026-07-27 15:11:17] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:11:17] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:12:08] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:12:08] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:12:09] [INFO]: ====================================================
+[2026-07-27 15:12:09] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:12:09] [INFO]: ====================================================
+[2026-07-27 15:12:09] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:12:09] [INFO]: Token de Spotify válido. Expira en aprox. 2122 segundos.
+[2026-07-27 15:12:09] [INFO]: 🌐 Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:12:09] [INFO]: 🎬 Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:12:09] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5729 segundos.
+[2026-07-27 15:12:09] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:12:10] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:12:11] [INFO]: Token de Spotify válido. Expira en aprox. 2121 segundos.
+[2026-07-27 15:12:11] [INFO]: Token de Spotify válido. Expira en aprox. 2121 segundos.
+[2026-07-27 15:12:11] [INFO]: Token de Spotify válido. Expira en aprox. 2121 segundos.
+[2026-07-27 15:12:11] [INFO]: Token de Spotify válido. Expira en aprox. 2121 segundos.
+[2026-07-27 15:12:11] [INFO]: Token de Spotify válido. Expira en aprox. 2121 segundos.
+[2026-07-27 15:12:12] [INFO]: Token de Spotify válido. Expira en aprox. 2120 segundos.
+[2026-07-27 15:12:12] [INFO]: Token de Spotify válido. Expira en aprox. 2120 segundos.
+[2026-07-27 15:12:12] [INFO]: 🎵 Sincronización en tiempo real: Sonando "Brick by Brick" - Roland Faunte
+[2026-07-27 15:12:14] [INFO]: Token de Spotify válido. Expira en aprox. 2117 segundos.
+[2026-07-27 15:12:17] [INFO]: Token de Spotify válido. Expira en aprox. 2115 segundos.
+[2026-07-27 15:12:17] [INFO]: Token de Spotify válido. Expira en aprox. 2114 segundos.
+[2026-07-27 15:12:18] [INFO]: 🎵 Sincronización en tiempo real: Sonando "I'm Still Standing" - Elton John
+[2026-07-27 15:12:19] [INFO]: Token de Spotify válido. Expira en aprox. 2112 segundos.
+[2026-07-27 15:12:22] [INFO]: Token de Spotify válido. Expira en aprox. 2110 segundos.
+[2026-07-27 15:12:24] [INFO]: Token de Spotify válido. Expira en aprox. 2107 segundos.
+[2026-07-27 15:12:25] [INFO]: Token de Spotify válido. Expira en aprox. 2107 segundos.
+[2026-07-27 15:12:25] [INFO]: 🎵 Sincronización en tiempo real: Sonando "The Winner Takes It All x The Night We Met" - Milan Rossi
+[2026-07-27 15:12:27] [INFO]: Token de Spotify válido. Expira en aprox. 2105 segundos.
+[2026-07-27 15:12:29] [INFO]: Token de Spotify válido. Expira en aprox. 2102 segundos.
+[2026-07-27 15:12:32] [INFO]: Token de Spotify válido. Expira en aprox. 2100 segundos.
+[2026-07-27 15:12:34] [INFO]: Token de Spotify válido. Expira en aprox. 2097 segundos.
+[2026-07-27 15:12:37] [INFO]: Token de Spotify válido. Expira en aprox. 2095 segundos.
+[2026-07-27 15:12:39] [INFO]: Token de Spotify válido. Expira en aprox. 2092 segundos.
+[2026-07-27 15:12:39] [INFO]: Token de Spotify válido. Expira en aprox. 2092 segundos.
+[2026-07-27 15:12:40] [INFO]: 🎵 Sincronización en tiempo real: Sonando "La Costa Del Silencio" - Mägo de Oz
+[2026-07-27 15:12:42] [INFO]: Token de Spotify válido. Expira en aprox. 2090 segundos.
+[2026-07-27 15:12:44] [INFO]: Token de Spotify válido. Expira en aprox. 2087 segundos.
+[2026-07-27 15:12:47] [INFO]: Token de Spotify válido. Expira en aprox. 2085 segundos.
+[2026-07-27 15:12:47] [INFO]: Token de Spotify válido. Expira en aprox. 2084 segundos.
+[2026-07-27 15:12:47] [INFO]: 🎵 Sincronización en tiempo real: Sonando "Ocupa Mi Piel" - Mon Laferte
+[2026-07-27 15:12:49] [INFO]: Token de Spotify válido. Expira en aprox. 2082 segundos.
+[2026-07-27 15:12:52] [INFO]: Token de Spotify válido. Expira en aprox. 2080 segundos.
+[2026-07-27 15:12:54] [INFO]: Token de Spotify válido. Expira en aprox. 2077 segundos.
+[2026-07-27 15:12:57] [INFO]: Token de Spotify válido. Expira en aprox. 2075 segundos.
+[2026-07-27 15:12:59] [INFO]: Token de Spotify válido. Expira en aprox. 2072 segundos.
+[2026-07-27 15:13:02] [INFO]: Token de Spotify válido. Expira en aprox. 2070 segundos.
+[2026-07-27 15:13:04] [INFO]: Token de Spotify válido. Expira en aprox. 2067 segundos.
+[2026-07-27 15:13:07] [INFO]: Token de Spotify válido. Expira en aprox. 2065 segundos.
+[2026-07-27 15:13:09] [INFO]: Token de Spotify válido. Expira en aprox. 2062 segundos.
+[2026-07-27 15:13:12] [INFO]: Token de Spotify válido. Expira en aprox. 2060 segundos.
+[2026-07-27 15:13:14] [INFO]: Token de Spotify válido. Expira en aprox. 2057 segundos.
+[2026-07-27 15:13:17] [INFO]: Token de Spotify válido. Expira en aprox. 2055 segundos.
+[2026-07-27 15:13:19] [INFO]: Token de Spotify válido. Expira en aprox. 2052 segundos.
+[2026-07-27 15:13:22] [INFO]: Token de Spotify válido. Expira en aprox. 2050 segundos.
+[2026-07-27 15:13:24] [INFO]: Token de Spotify válido. Expira en aprox. 2047 segundos.
+[2026-07-27 15:13:27] [INFO]: Token de Spotify válido. Expira en aprox. 2045 segundos.
+[2026-07-27 15:13:29] [INFO]: Token de Spotify válido. Expira en aprox. 2042 segundos.
+[2026-07-27 15:13:32] [INFO]: Token de Spotify válido. Expira en aprox. 2040 segundos.
+[2026-07-27 15:13:34] [INFO]: Token de Spotify válido. Expira en aprox. 2037 segundos.
+[2026-07-27 15:13:37] [INFO]: Token de Spotify válido. Expira en aprox. 2035 segundos.
+[2026-07-27 15:13:39] [INFO]: Token de Spotify válido. Expira en aprox. 2032 segundos.
+[2026-07-27 15:13:42] [INFO]: Token de Spotify válido. Expira en aprox. 2030 segundos.
+[2026-07-27 15:13:44] [INFO]: Token de Spotify válido. Expira en aprox. 2027 segundos.
+[2026-07-27 15:13:47] [INFO]: Token de Spotify válido. Expira en aprox. 2025 segundos.
+[2026-07-27 15:13:49] [INFO]: Token de Spotify válido. Expira en aprox. 2022 segundos.
+[2026-07-27 15:13:52] [INFO]: Token de Spotify válido. Expira en aprox. 2020 segundos.
+[2026-07-27 15:13:54] [INFO]: Token de Spotify válido. Expira en aprox. 2017 segundos.
+[2026-07-27 15:13:57] [INFO]: Token de Spotify válido. Expira en aprox. 2015 segundos.
+[2026-07-27 15:13:59] [INFO]: Token de Spotify válido. Expira en aprox. 2012 segundos.
+[2026-07-27 15:14:00] [INFO]: ====================================================
+[2026-07-27 15:14:00] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:14:00] [INFO]: ====================================================
+[2026-07-27 15:14:00] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:14:00] [INFO]: Token de Spotify válido. Expira en aprox. 2012 segundos.
+[2026-07-27 15:14:00] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:14:00] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5619 segundos.
+[2026-07-27 15:14:00] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:14:00] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:14:02] [INFO]: Token de Spotify válido. Expira en aprox. 2010 segundos.
+[2026-07-27 15:14:04] [INFO]: Token de Spotify válido. Expira en aprox. 2007 segundos.
+[2026-07-27 15:14:07] [INFO]: Token de Spotify válido. Expira en aprox. 2005 segundos.
+[2026-07-27 15:14:09] [INFO]: Token de Spotify válido. Expira en aprox. 2002 segundos.
+[2026-07-27 15:14:12] [INFO]: Token de Spotify válido. Expira en aprox. 2000 segundos.
+[2026-07-27 15:14:14] [INFO]: Token de Spotify válido. Expira en aprox. 1997 segundos.
+[2026-07-27 15:14:16] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:14:16] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:14:17] [INFO]: ====================================================
+[2026-07-27 15:14:17] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:14:17] [INFO]: ====================================================
+[2026-07-27 15:14:17] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:14:17] [INFO]: Token de Spotify válido. Expira en aprox. 1994 segundos.
+[2026-07-27 15:14:17] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:14:17] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:14:17] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5602 segundos.
+[2026-07-27 15:14:17] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:14:17] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:14:19] [INFO]: Token de Spotify válido. Expira en aprox. 1993 segundos.
+[2026-07-27 15:14:19] [INFO]: Token de Spotify válido. Expira en aprox. 1992 segundos.
+[2026-07-27 15:14:20] [INFO]: Token de Spotify válido. Expira en aprox. 1992 segundos.
+[2026-07-27 15:14:20] [INFO]: Token de Spotify válido. Expira en aprox. 1992 segundos.
+[2026-07-27 15:14:20] [INFO]: Sincronización en tiempo real: Sonando "Ocupa Mi Piel" - Mon Laferte
+[2026-07-27 15:14:22] [INFO]: Token de Spotify válido. Expira en aprox. 1989 segundos.
+[2026-07-27 15:14:25] [INFO]: Token de Spotify válido. Expira en aprox. 1987 segundos.
+[2026-07-27 15:14:27] [INFO]: Token de Spotify válido. Expira en aprox. 1984 segundos.
+[2026-07-27 15:14:29] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:29] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:29] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:29] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:29] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:30] [INFO]: Token de Spotify válido. Expira en aprox. 1982 segundos.
+[2026-07-27 15:14:32] [INFO]: Token de Spotify válido. Expira en aprox. 1979 segundos.
+[2026-07-27 15:14:35] [INFO]: Token de Spotify válido. Expira en aprox. 1977 segundos.
+[2026-07-27 15:14:37] [INFO]: Token de Spotify válido. Expira en aprox. 1974 segundos.
+[2026-07-27 15:14:40] [INFO]: Token de Spotify válido. Expira en aprox. 1972 segundos.
+[2026-07-27 15:14:40] [INFO]: Token de Spotify válido. Expira en aprox. 1972 segundos.
+[2026-07-27 15:14:40] [INFO]: Sincronización en tiempo real: Sonando "Lo Dudo" - José José
+[2026-07-27 15:14:42] [INFO]: Token de Spotify válido. Expira en aprox. 1969 segundos.
+[2026-07-27 15:14:45] [INFO]: Token de Spotify válido. Expira en aprox. 1967 segundos.
+[2026-07-27 15:14:47] [INFO]: Token de Spotify válido. Expira en aprox. 1964 segundos.
+[2026-07-27 15:14:50] [INFO]: Token de Spotify válido. Expira en aprox. 1962 segundos.
+[2026-07-27 15:14:52] [INFO]: Token de Spotify válido. Expira en aprox. 1959 segundos.
+[2026-07-27 15:14:55] [INFO]: Token de Spotify válido. Expira en aprox. 1957 segundos.
+[2026-07-27 15:14:57] [INFO]: Token de Spotify válido. Expira en aprox. 1954 segundos.
+[2026-07-27 15:15:00] [INFO]: Token de Spotify válido. Expira en aprox. 1952 segundos.
+[2026-07-27 15:15:02] [INFO]: Token de Spotify válido. Expira en aprox. 1949 segundos.
+[2026-07-27 15:15:05] [INFO]: Token de Spotify válido. Expira en aprox. 1947 segundos.
+[2026-07-27 15:15:07] [INFO]: Token de Spotify válido. Expira en aprox. 1944 segundos.
+[2026-07-27 15:15:10] [INFO]: Token de Spotify válido. Expira en aprox. 1942 segundos.
+[2026-07-27 15:15:12] [INFO]: Token de Spotify válido. Expira en aprox. 1939 segundos.
+[2026-07-27 15:15:15] [INFO]: Token de Spotify válido. Expira en aprox. 1937 segundos.
+[2026-07-27 15:15:17] [INFO]: Token de Spotify válido. Expira en aprox. 1934 segundos.
+[2026-07-27 15:15:20] [INFO]: Token de Spotify válido. Expira en aprox. 1932 segundos.
+[2026-07-27 15:15:22] [INFO]: Token de Spotify válido. Expira en aprox. 1929 segundos.
+[2026-07-27 15:15:25] [INFO]: Token de Spotify válido. Expira en aprox. 1927 segundos.
+[2026-07-27 15:15:27] [INFO]: Token de Spotify válido. Expira en aprox. 1924 segundos.
+[2026-07-27 15:15:30] [INFO]: Token de Spotify válido. Expira en aprox. 1922 segundos.
+[2026-07-27 15:15:32] [INFO]: Token de Spotify válido. Expira en aprox. 1919 segundos.
+[2026-07-27 15:15:33] [INFO]: ====================================================
+[2026-07-27 15:15:33] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:15:33] [INFO]: ====================================================
+[2026-07-27 15:15:33] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:15:33] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:15:33] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5526 segundos.
+[2026-07-27 15:15:33] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:15:33] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:15:35] [INFO]: Token de Spotify válido. Expira en aprox. 1917 segundos.
+[2026-07-27 15:15:37] [INFO]: Token de Spotify válido. Expira en aprox. 1914 segundos.
+[2026-07-27 15:15:40] [INFO]: Token de Spotify válido. Expira en aprox. 1912 segundos.
+[2026-07-27 15:15:42] [INFO]: Token de Spotify válido. Expira en aprox. 1909 segundos.
+[2026-07-27 15:15:45] [INFO]: Token de Spotify válido. Expira en aprox. 1907 segundos.
+[2026-07-27 15:15:47] [INFO]: Token de Spotify válido. Expira en aprox. 1904 segundos.
+[2026-07-27 15:15:50] [INFO]: Token de Spotify válido. Expira en aprox. 1902 segundos.
+[2026-07-27 15:15:52] [INFO]: Token de Spotify válido. Expira en aprox. 1899 segundos.
+[2026-07-27 15:15:55] [INFO]: Token de Spotify válido. Expira en aprox. 1897 segundos.
+[2026-07-27 15:15:57] [INFO]: Token de Spotify válido. Expira en aprox. 1894 segundos.
+[2026-07-27 15:16:00] [INFO]: Token de Spotify válido. Expira en aprox. 1892 segundos.
+[2026-07-27 15:16:02] [INFO]: Token de Spotify válido. Expira en aprox. 1889 segundos.
+[2026-07-27 15:16:05] [INFO]: Token de Spotify válido. Expira en aprox. 1887 segundos.
+[2026-07-27 15:16:07] [INFO]: Token de Spotify válido. Expira en aprox. 1884 segundos.
+[2026-07-27 15:16:10] [INFO]: Token de Spotify válido. Expira en aprox. 1882 segundos.
+[2026-07-27 15:16:12] [INFO]: Token de Spotify válido. Expira en aprox. 1879 segundos.
+[2026-07-27 15:16:15] [INFO]: Token de Spotify válido. Expira en aprox. 1877 segundos.
+[2026-07-27 15:16:17] [INFO]: Token de Spotify válido. Expira en aprox. 1874 segundos.
+[2026-07-27 15:16:20] [INFO]: Token de Spotify válido. Expira en aprox. 1872 segundos.
+[2026-07-27 15:16:22] [INFO]: Token de Spotify válido. Expira en aprox. 1869 segundos.
+[2026-07-27 15:16:25] [INFO]: Token de Spotify válido. Expira en aprox. 1867 segundos.
+[2026-07-27 15:16:27] [INFO]: Token de Spotify válido. Expira en aprox. 1864 segundos.
+[2026-07-27 15:16:30] [INFO]: Token de Spotify válido. Expira en aprox. 1862 segundos.
+[2026-07-27 15:16:32] [INFO]: Token de Spotify válido. Expira en aprox. 1859 segundos.
+[2026-07-27 15:16:35] [INFO]: Token de Spotify válido. Expira en aprox. 1857 segundos.
+[2026-07-27 15:16:37] [INFO]: Token de Spotify válido. Expira en aprox. 1854 segundos.
+[2026-07-27 15:16:40] [INFO]: Token de Spotify válido. Expira en aprox. 1852 segundos.
+[2026-07-27 15:16:42] [INFO]: Token de Spotify válido. Expira en aprox. 1849 segundos.
+[2026-07-27 15:16:45] [INFO]: Token de Spotify válido. Expira en aprox. 1847 segundos.
+[2026-07-27 15:16:47] [INFO]: Token de Spotify válido. Expira en aprox. 1844 segundos.
+[2026-07-27 15:16:50] [INFO]: Token de Spotify válido. Expira en aprox. 1842 segundos.
+[2026-07-27 15:16:50] [INFO]: Token de Spotify válido. Expira en aprox. 1842 segundos.
+[2026-07-27 15:16:50] [INFO]: Sincronización en tiempo real: Sonando "Llorar (feat. Mario Domm)" - Jesse & Joy, Mario Domm
+[2026-07-27 15:16:52] [INFO]: Token de Spotify válido. Expira en aprox. 1839 segundos.
+[2026-07-27 15:16:52] [INFO]: Token de Spotify válido. Expira en aprox. 1839 segundos.
+[2026-07-27 15:16:53] [INFO]: Sincronización en tiempo real: Sonando "ONLINE" - ARIA BELA
+[2026-07-27 15:16:55] [INFO]: Token de Spotify válido. Expira en aprox. 1837 segundos.
+[2026-07-27 15:16:55] [INFO]: Token de Spotify válido. Expira en aprox. 1837 segundos.
+[2026-07-27 15:16:55] [INFO]: Sincronización en tiempo real: Sonando "Dream a Little Dream of Me - From the Prime Original Series Spider-Noir" - Li Jun Li
+[2026-07-27 15:16:57] [INFO]: Token de Spotify válido. Expira en aprox. 1834 segundos.
+[2026-07-27 15:17:00] [INFO]: Token de Spotify válido. Expira en aprox. 1832 segundos.
+[2026-07-27 15:17:02] [INFO]: Token de Spotify válido. Expira en aprox. 1829 segundos.
+[2026-07-27 15:17:05] [INFO]: Token de Spotify válido. Expira en aprox. 1827 segundos.
+[2026-07-27 15:17:07] [INFO]: Token de Spotify válido. Expira en aprox. 1824 segundos.
+[2026-07-27 15:17:10] [INFO]: Token de Spotify válido. Expira en aprox. 1822 segundos.
+[2026-07-27 15:17:12] [INFO]: Token de Spotify válido. Expira en aprox. 1819 segundos.
+[2026-07-27 15:17:15] [INFO]: Token de Spotify válido. Expira en aprox. 1817 segundos.
+[2026-07-27 15:17:17] [INFO]: Token de Spotify válido. Expira en aprox. 1814 segundos.
+[2026-07-27 15:17:20] [INFO]: Token de Spotify válido. Expira en aprox. 1812 segundos.
+[2026-07-27 15:17:22] [INFO]: Token de Spotify válido. Expira en aprox. 1809 segundos.
+[2026-07-27 15:17:25] [INFO]: Token de Spotify válido. Expira en aprox. 1807 segundos.
+[2026-07-27 15:17:27] [INFO]: Token de Spotify válido. Expira en aprox. 1804 segundos.
+[2026-07-27 15:17:30] [INFO]: Token de Spotify válido. Expira en aprox. 1802 segundos.
+[2026-07-27 15:17:32] [INFO]: Token de Spotify válido. Expira en aprox. 1799 segundos.
+[2026-07-27 15:17:35] [INFO]: Token de Spotify válido. Expira en aprox. 1797 segundos.
+[2026-07-27 15:17:37] [INFO]: Token de Spotify válido. Expira en aprox. 1794 segundos.
+[2026-07-27 15:17:40] [INFO]: Token de Spotify válido. Expira en aprox. 1792 segundos.
+[2026-07-27 15:17:42] [INFO]: Token de Spotify válido. Expira en aprox. 1789 segundos.
+[2026-07-27 15:17:45] [INFO]: Token de Spotify válido. Expira en aprox. 1787 segundos.
+[2026-07-27 15:17:47] [INFO]: Token de Spotify válido. Expira en aprox. 1784 segundos.
+[2026-07-27 15:17:50] [INFO]: Token de Spotify válido. Expira en aprox. 1782 segundos.
+[2026-07-27 15:17:52] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:17:52] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:17:53] [INFO]: ====================================================
+[2026-07-27 15:17:53] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:17:53] [INFO]: ====================================================
+[2026-07-27 15:17:53] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:17:53] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:17:53] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:17:54] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5385 segundos.
+[2026-07-27 15:17:54] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:17:54] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:17:57] [INFO]: Sincronización en tiempo real: Sonando "Dream a Little Dream of Me - From the Prime Original Series Spider-Noir" - Li Jun Li
+[2026-07-27 15:19:56] [INFO]: ====================================================
+[2026-07-27 15:19:56] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:19:56] [INFO]: ====================================================
+[2026-07-27 15:19:56] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:19:56] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:19:56] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5263 segundos.
+[2026-07-27 15:19:56] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:19:56] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:20:07] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:20:07] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:20:08] [INFO]: ====================================================
+[2026-07-27 15:20:08] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:20:08] [INFO]: ====================================================
+[2026-07-27 15:20:08] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:20:08] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:20:08] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:20:08] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5251 segundos.
+[2026-07-27 15:20:08] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:20:08] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:20:11] [INFO]: Sincronización en tiempo real: Sonando "Dream a Little Dream of Me - From the Prime Original Series Spider-Noir" - Li Jun Li
+[2026-07-27 15:20:13] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 15:20:14] [INFO]: TTS Activado desde la interfaz web.
+[2026-07-27 15:20:14] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba de voz desde la interfaz web."
+[2026-07-27 15:20:18] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 15:20:21] [INFO]: TTS Activado desde la interfaz web.
+[2026-07-27 15:20:34] [INFO]: Sincronización en tiempo real: Sonando "Saving Grace - From the Prime Original Series Spider-Noir" - KIRBY
+[2026-07-27 15:20:36] [INFO]: Sincronización en tiempo real: Sonando "Camino" - Los Punsetes, Depresión Sonora
+[2026-07-27 15:21:36] [INFO]: ====================================================
+[2026-07-27 15:21:36] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:21:36] [INFO]: ====================================================
+[2026-07-27 15:21:36] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:21:36] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:21:36] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5163 segundos.
+[2026-07-27 15:21:36] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:21:36] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:22:20] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:22:20] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:22:23] [INFO]: ====================================================
+[2026-07-27 15:22:23] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:22:23] [INFO]: ====================================================
+[2026-07-27 15:22:23] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:22:23] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:22:23] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:22:23] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5115 segundos.
+[2026-07-27 15:22:23] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:22:24] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:22:26] [INFO]: Sincronización en tiempo real: Sonando "Camino" - Los Punsetes, Depresión Sonora
+[2026-07-27 15:22:33] [INFO]: ====================================================
+[2026-07-27 15:22:33] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:22:33] [INFO]: ====================================================
+[2026-07-27 15:22:33] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:22:33] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:22:33] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:22:33] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 5105 segundos.
+[2026-07-27 15:22:33] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:22:34] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:22:36] [INFO]: Sincronización en tiempo real: Sonando "Camino" - Los Punsetes, Depresión Sonora
+[2026-07-27 15:22:50] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba de voz desde la interfaz web."
+[2026-07-27 15:25:24] [INFO]: Sincronización en tiempo real: Sonando "seguiremos siendo" - Depresión Sonora, Bratty
+[2026-07-27 15:26:40] [INFO]: ====================================================
+[2026-07-27 15:26:40] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:26:40] [INFO]: ====================================================
+[2026-07-27 15:26:40] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:26:40] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:26:40] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4859 segundos.
+[2026-07-27 15:26:40] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:26:40] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:26:56] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:26:56] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:26:57] [INFO]: ====================================================
+[2026-07-27 15:26:57] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:26:57] [INFO]: ====================================================
+[2026-07-27 15:26:57] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:26:57] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:26:57] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:26:57] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4842 segundos.
+[2026-07-27 15:26:57] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:26:57] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:27:00] [INFO]: Sincronización en tiempo real: Sonando "seguiremos siendo" - Depresión Sonora, Bratty
+[2026-07-27 15:27:16] [INFO]: Canción añadida a la cola de Spotify: The Night We Met - Lord Huron
+[2026-07-27 15:27:16] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu añadió a la cola de Spotify: The Night We Met de Lord Huron"
+[2026-07-27 15:27:17] [INFO]: Canción añadida a la cola de Spotify: The Night We Met - Lord Huron
+[2026-07-27 15:27:17] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu añadió a la cola de Spotify: The Night We Met de Lord Huron"
+[2026-07-27 15:27:17] [INFO]: Lectura automática (Voz General) de jajaeledu: "@jajaeledu Canción añadida a la cola: The Night We Met - Lord Huron"
+[2026-07-27 15:27:17] [INFO]: Lectura automática (Voz General) de jajaeledu: "@jajaeledu Canción añadida a la cola: The Night We Met - Lord Huron"
+[2026-07-27 15:27:23] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: @jajaeledu Canción añadida a la cola: The Night We Met - Lord Huron"
+[2026-07-27 15:27:23] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: @jajaeledu Canción añadida a la cola: The Night We Met - Lord Huron"
+[2026-07-27 15:27:41] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 15:27:46] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola"
+[2026-07-27 15:27:46] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola"
+[2026-07-27 15:27:46] [INFO]: [MUTE] TTS Silenciado. Omitiendo audio: "jajaeledu dice: hola"
+[2026-07-27 15:27:46] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: hola"
+[2026-07-27 15:28:27] [INFO]: [MUTE] TTS Silenciado. Omitiendo audio: "Prueba de voz desde la interfaz web."
+[2026-07-27 15:31:53] [INFO]: ====================================================
+[2026-07-27 15:31:53] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:31:53] [INFO]: ====================================================
+[2026-07-27 15:31:53] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:31:53] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:31:53] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4545 segundos.
+[2026-07-27 15:31:53] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:31:54] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:32:10] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:32:10] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:32:11] [INFO]: ====================================================
+[2026-07-27 15:32:11] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:32:11] [INFO]: ====================================================
+[2026-07-27 15:32:11] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:32:11] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:32:11] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:32:11] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4528 segundos.
+[2026-07-27 15:32:11] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:32:11] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:32:14] [INFO]: Sincronización en tiempo real: Sonando "seguiremos siendo" - Depresión Sonora, Bratty
+[2026-07-27 15:37:18] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:37:18] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:37:19] [INFO]: ====================================================
+[2026-07-27 15:37:19] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:37:19] [INFO]: ====================================================
+[2026-07-27 15:37:19] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:37:19] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:37:19] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:37:20] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4219 segundos.
+[2026-07-27 15:37:20] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:37:20] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:37:23] [INFO]: Sincronización en tiempo real: Sonando "seguiremos siendo" - Depresión Sonora, Bratty
+[2026-07-27 15:37:38] [INFO]: Sincronización en tiempo real: Sonando "The Night We Met" - Lord Huron
+[2026-07-27 15:37:46] [INFO]: ====================================================
+[2026-07-27 15:37:46] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:37:46] [INFO]: ====================================================
+[2026-07-27 15:37:46] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:37:46] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:37:46] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4192 segundos.
+[2026-07-27 15:37:46] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:37:47] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:38:52] [INFO]: ====================================================
+[2026-07-27 15:38:52] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:38:52] [INFO]: ====================================================
+[2026-07-27 15:38:52] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:38:52] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:38:52] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4127 segundos.
+[2026-07-27 15:38:52] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:38:52] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:39:03] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:39:03] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:39:04] [INFO]: ====================================================
+[2026-07-27 15:39:04] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:39:04] [INFO]: ====================================================
+[2026-07-27 15:39:04] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:39:04] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:39:04] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:39:05] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4114 segundos.
+[2026-07-27 15:39:05] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:39:05] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:39:08] [INFO]: Sincronización en tiempo real: Sonando "The Night We Met" - Lord Huron
+[2026-07-27 15:40:53] [INFO]: ====================================================
+[2026-07-27 15:40:53] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:40:53] [INFO]: ====================================================
+[2026-07-27 15:40:53] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:40:53] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:40:54] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 4005 segundos.
+[2026-07-27 15:40:54] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:40:54] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:42:21] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:42:21] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:42:22] [INFO]: ====================================================
+[2026-07-27 15:42:22] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:42:22] [INFO]: ====================================================
+[2026-07-27 15:42:22] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:42:22] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:42:22] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:42:22] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3916 segundos.
+[2026-07-27 15:42:22] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:42:23] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:42:25] [INFO]: Sincronización en tiempo real: Sonando "The Night We Met" - Lord Huron
+[2026-07-27 15:42:32] [INFO]: El access_token de Spotify expiró o está por expirar. Renovando...
+[2026-07-27 15:42:32] [INFO]: Renovando access_token de Spotify usando refresh_token...
+[2026-07-27 15:42:32] [INFO]: Token de Spotify renovado exitosamente.
+[2026-07-27 15:42:32] [INFO]: Tokens de Spotify guardados correctamente en tokens/spotify_tokens.json
+[2026-07-27 15:43:37] [INFO]: ====================================================
+[2026-07-27 15:43:37] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:43:37] [INFO]: ====================================================
+[2026-07-27 15:43:37] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:43:37] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:43:37] [INFO]: Overlay para OBS (HTTP libre de SSL): http://localhost:3001/overlay
+[2026-07-27 15:43:38] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3841 segundos.
+[2026-07-27 15:43:38] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:43:38] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:44:33] [INFO]: Sincronización en tiempo real: Sonando "Terapia" - lázaro suplika dopamina
+[2026-07-27 15:45:11] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:45:11] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:45:12] [INFO]: ====================================================
+[2026-07-27 15:45:12] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:45:12] [INFO]: ====================================================
+[2026-07-27 15:45:12] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:45:12] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:45:12] [INFO]: Overlay para OBS (HTTPS): https://localhost:3000/overlay
+[2026-07-27 15:45:12] [INFO]: Overlay para OBS (HTTP libre de SSL): http://localhost:3001/overlay
+[2026-07-27 15:45:12] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3747 segundos.
+[2026-07-27 15:45:12] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:45:12] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:45:15] [INFO]: Sincronización en tiempo real: Sonando "Terapia" - lázaro suplika dopamina
+[2026-07-27 15:45:58] [INFO]: Lectura automática (Voz General) de drivingunderbellyxfw53z: "Ai viewers streamboo. Com"
+[2026-07-27 15:45:58] [INFO]: Lectura automática (Voz General) de drivingunderbellyxfw53z: "Ai viewers streamboo. Com"
+[2026-07-27 15:45:58] [INFO]: 🔊 Generando y reproduciendo voz TTS: "drivingunderbellyxfw53z dice: Ai viewers streamboo. Com"
+[2026-07-27 15:45:58] [INFO]: 🔊 Generando y reproduciendo voz TTS: "drivingunderbellyxfw53z dice: Ai viewers streamboo. Com"
+[2026-07-27 15:47:58] [INFO]: Sincronización en tiempo real: Sonando "Volverás a quererme mañana" - Perfecto Miserable
+[2026-07-27 15:48:08] [INFO]: ====================================================
+[2026-07-27 15:48:08] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:48:08] [INFO]: ====================================================
+[2026-07-27 15:48:08] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:48:08] [INFO]: Interfaz Web (HTTPS opcional): https://localhost:3443/
+[2026-07-27 15:48:08] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:48:08] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3571 segundos.
+[2026-07-27 15:48:08] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:48:09] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:48:37] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:48:37] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:48:38] [INFO]: ====================================================
+[2026-07-27 15:48:38] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:48:38] [INFO]: ====================================================
+[2026-07-27 15:48:38] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:48:38] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:48:38] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:48:38] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3541 segundos.
+[2026-07-27 15:48:38] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:48:38] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:48:41] [INFO]: Sincronización en tiempo real: Sonando "Volverás a quererme mañana" - Perfecto Miserable
+[2026-07-27 15:49:57] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:49:57] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:49:58] [INFO]: ====================================================
+[2026-07-27 15:49:58] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:49:58] [INFO]: ====================================================
+[2026-07-27 15:49:58] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:49:58] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:49:58] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:49:58] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3460 segundos.
+[2026-07-27 15:49:58] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:49:59] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:50:02] [INFO]: Sincronización en tiempo real: Sonando "Volverás a quererme mañana" - Perfecto Miserable
+[2026-07-27 15:51:00] [INFO]: ====================================================
+[2026-07-27 15:51:00] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:51:00] [INFO]: ====================================================
+[2026-07-27 15:51:00] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:51:00] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:51:00] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3399 segundos.
+[2026-07-27 15:51:00] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:51:00] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:51:08] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:51:08] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:51:10] [INFO]: ====================================================
+[2026-07-27 15:51:10] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:51:10] [INFO]: ====================================================
+[2026-07-27 15:51:10] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:51:10] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 15:51:10] [INFO]: Overlay para OBS accesible en: https://localhost:3000/overlay
+[2026-07-27 15:51:10] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3389 segundos.
+[2026-07-27 15:51:10] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:51:10] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:51:13] [INFO]: Sincronización en tiempo real: Sonando "Volverás a quererme mañana" - Perfecto Miserable
+[2026-07-27 15:52:25] [INFO]: Sincronización en tiempo real: Sonando "Selfless" - The Strokes
+[2026-07-27 15:53:41] [INFO]: ====================================================
+[2026-07-27 15:53:41] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:53:41] [INFO]: ====================================================
+[2026-07-27 15:53:41] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:53:41] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 15:53:41] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3238 segundos.
+[2026-07-27 15:53:41] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:53:41] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:54:18] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 15:54:18] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:54:19] [INFO]: ====================================================
+[2026-07-27 15:54:19] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:54:19] [INFO]: ====================================================
+[2026-07-27 15:54:19] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:54:19] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 15:54:19] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 15:54:19] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 3200 segundos.
+[2026-07-27 15:54:19] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:54:19] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:54:22] [INFO]: Sincronización en tiempo real: Sonando "Selfless" - The Strokes
+[2026-07-27 15:56:10] [INFO]: Sincronización en tiempo real: Sonando "Sign of the Times" - Harry Styles
+[2026-07-27 15:58:29] [INFO]: Recibida señal SIGTERM. Desconectando bot de chat...
+[2026-07-27 15:58:29] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 15:58:35] [INFO]: ====================================================
+[2026-07-27 15:58:35] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 15:58:35] [INFO]: ====================================================
+[2026-07-27 15:58:35] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 15:58:35] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 15:58:35] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 15:58:36] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 2943 segundos.
+[2026-07-27 15:58:36] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 15:58:36] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 15:58:39] [INFO]: Sincronización en tiempo real: Sonando "Sign of the Times" - Harry Styles
+[2026-07-27 16:01:51] [INFO]: Sincronización en tiempo real: Sonando "Like You Do" - Joji
+[2026-07-27 16:05:51] [INFO]: Sincronización en tiempo real: Sonando "why am i like this" - bbno$
+[2026-07-27 16:08:49] [INFO]: Sincronización en tiempo real: Sonando "Bring Me To Life" - Evanescence
+[2026-07-27 16:10:43] [INFO]: ====================================================
+[2026-07-27 16:10:43] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:10:43] [INFO]: ====================================================
+[2026-07-27 16:10:43] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:10:43] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 16:10:43] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 2216 segundos.
+[2026-07-27 16:10:43] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:10:43] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:12:01] [INFO]: Recibida señal SIGTERM. Desconectando bot de chat...
+[2026-07-27 16:12:01] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:12:02] [INFO]: ====================================================
+[2026-07-27 16:12:02] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:12:02] [INFO]: ====================================================
+[2026-07-27 16:12:02] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:12:02] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 16:12:02] [INFO]: Overlay para OBS (HTTP): http://127.0.0.1:3001/overlay
+[2026-07-27 16:12:03] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 2136 segundos.
+[2026-07-27 16:12:03] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:12:03] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:12:06] [INFO]: Sincronización en tiempo real: Sonando "Bring Me To Life" - Evanescence
+[2026-07-27 16:12:46] [INFO]: Sincronización en tiempo real: Sonando "Heart-Shaped Box" - Nirvana
+[2026-07-27 16:17:26] [INFO]: Sincronización en tiempo real: Sonando "Duality" - Slipknot
+[2026-07-27 16:19:51] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:19:51] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:19:52] [INFO]: ====================================================
+[2026-07-27 16:19:52] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:19:52] [INFO]: ====================================================
+[2026-07-27 16:19:52] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:19:52] [WARN]: El puerto 3000 ya está en uso.
+[2026-07-27 16:19:52] [WARN]: El puerto HTTP 3001 ya está en uso.
+[2026-07-27 16:19:53] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 1666 segundos.
+[2026-07-27 16:19:53] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:19:53] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:21:41] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:24:35] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:24:35] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
