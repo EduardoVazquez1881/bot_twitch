@@ -1,6 +1,6 @@
-# 🤖 Bot de Twitch con Autenticación OAuth 2.0 & Chat IRC
+# 🤖 Bot de Twitch con Dashboard SPA, Spotify & Overlays para OBS
 
-Sistema completo en **Node.js** para autenticarse con la API de Twitch mediante **OAuth 2.0 (Confidencial)** en `localhost` con HTTPS autofirmado, y conectarse al chat del canal a través de **IRC (tmi.js)**.
+Sistema modular e inteligente en **Node.js** para administrar el chat de Twitch (IRC), lectura por voz con control granular (**Text-to-Speech con EdgeTTS**), reproducción e interacción con **Spotify Web API**, detección de estado en vivo del stream mediante **Twitch Helix API**, y **Overlays personalizables para OBS Studio / Streamlabs**.
 
 ---
 
@@ -11,18 +11,19 @@ Sistema completo en **Node.js** para autenticarse con la API de Twitch mediante 
 - [Paso 2: Configurar las Variables de Entorno (.env)](#paso-2-configurar-las-variables-de-entorno-env)
 - [Paso 3: Instalación de Dependencias](#paso-3-instalación-de-dependencias)
 - [Paso 4: Ejecución de la Aplicación](#paso-4-ejecución-de-la-aplicación)
-- [⚙️ Cómo Funciona el Sistema](#️-cómo-funciona-el-sistema)
-  - [Autenticación OAuth 2.0 & Certificados SSL](#1-autenticación-oauth-20--certificados-ssl)
-  - [Gestión y Renovación Automática de Tokens](#2-gestión-y-renovación-automática-de-tokens)
-  - [Conexión al Chat e Interacción](#3-conexión-al-chat-e-interacción)
-  - [Sistema de Logging](#4-sistema-de-logging)
+- [💬 Comandos del Chat de Twitch](#-comandos-del-chat-de-twitch)
+- [🖥️ Dashboard Web & Indicadores en Tiempo Real](#️-dashboard-web--indicadores-en-tiempo-real)
+- [🔊 Sistema Multivoz TTS e Interruptores Granulares](#-sistema-multivoz-tts-e-interruptores-granulares)
+- [🎨 Overlays para OBS Studio / Streamlabs](#-overlays-para-obs-studio--streamlabs)
 
 ---
 
 ## 📌 Requisitos Previos
 
-1. **Node.js** (v18.0.0 o superior instalado).
-2. **Cuenta de Twitch** activa (la cuenta del bot o tu cuenta de streamer).
+1. **Node.js** (v18.0.0 o superior).
+2. **Cuenta de Twitch** activa (bot o streamer).
+3. **Spotify Premium** (para control e integración de la reproducción en tiempo real).
+4. **OBS Studio** o **Streamlabs Desktop** (para fuentes de navegador).
 
 ---
 
@@ -30,25 +31,31 @@ Sistema completo en **Node.js** para autenticarse con la API de Twitch mediante 
 
 ```text
 bot-twitch/
-├── src/                  # Código fuente del bot
-│   ├── config.js         # Configuración centralizada (.env y rutas)
-│   ├── logger.js         # Módulo de logging profesional con Winston
-│   ├── auth.js           # Servidor HTTPS, flujo OAuth 2.0 y gestión de tokens
-│   ├── chat.js           # Cliente IRC tmi.js y comandos de voz
-│   └── voz.js            # Motor TTS de lectura por voz (EdgeTTS + mpg123)
-├── logs/                 # Archivos de logs del sistema
-│   ├── app.log           # Historial de logs del sistema y errores
-│   └── chat.log          # Historial de mensajes de chat guardados
-├── tokens/               # Almacenamiento seguro de credenciales OAuth
-│   └── tokens.json       # Tokens de Twitch (access_token y refresh_token)
-├── certs/                # Certificados SSL para HTTPS local
-│   ├── cert.pem          # Certificado SSL autofirmado para localhost
-│   └── key.pem           # Clave privada SSL autofirmada
-├── test/                 # Pruebas y scripts de prueba
-│   └── test-voice.js     # Script de prueba de voz
-├── index.js              # Punto de entrada principal
+├── public/               # Frontend Single-Page Application (SPA)
+│   ├── views/            # Vistas parciales HTML dinámicas (SPA)
+│   │   ├── dashboard.html # Vista principal con reproductor, logs y cola
+│   │   ├── search.html    # Buscador de canciones Spotify
+│   │   ├── history.html   # Historial de pedidos
+│   │   ├── overlays.html  # Editor visual y configurador de Overlays para OBS
+│   │   └── settings.html  # Formulario de ajustes del sistema
+│   ├── app.js            # Lógica SPA, sincronización en tiempo real (SSE) y controles
+│   ├── overlay.html      # Widget de Spotify & Subtítulos para OBS
+│   ├── alert-follower.html # Overlay configurable de Alertas de Seguidores
+│   ├── style.css         # Sistema de diseño CSS responsivo (Glassmorphism)
+│   └── index.html        # Shell HTML principal (Sidebar + Header + Status Bar)
+├── src/                  # Backend en Node.js (Módulos ES)
+│   ├── config.js         # Configuración centralizada (.env)
+│   ├── logger.js         # Logging estructurado con Winston
+│   ├── auth.js           # Flujo OAuth 2.0, tokens y detección de Stream (Helix API)
+│   ├── spotifyAuth.js    # Flujo OAuth 2.0 y renovación de tokens de Spotify
+│   ├── spotify.js        # Integración con Spotify Web API (Play, Skip, Polling)
+│   ├── server.js         # Servidor HTTP, SSE (/api/events) y API REST
+│   ├── chat.js           # Cliente IRC tmi.js e integración con comandos
+│   └── voz.js            # Motor TTS (EdgeTTS + reproductor de audio secuencial)
+├── logs/                 # Archivos de registro (app.log, chat.log)
+├── tokens/               # Almacenamiento seguro de tokens OAuth
+├── index.js              # Punto de entrada del bot
 ├── .env                  # Variables de entorno privadas
-├── .env.example          # Plantilla de ejemplo de variables de entorno
 └── package.json          # Dependencias y scripts
 ```
 
@@ -57,64 +64,34 @@ bot-twitch/
 ## Paso 1: Configurar la Aplicación en Twitch
 
 1. Dirígete a la [Consola de Desarrolladores de Twitch](https://dev.twitch.tv/console/apps).
-2. Inicia sesión con tu cuenta de Twitch y haz clic en **Register Your Application** (Registrar tu aplicación).
-3. Completa los campos del formulario:
-   - **Name**: Nombre de tu bot (debe ser único en Twitch).
-   - **OAuth Redirect URLs**: `https://localhost:3000`
-   - **Category**: `Chat Bot` o `Application`
-   - **Client Type**: Selecciona **Confidential** (Confidencial).
-4. Haz clic en **Create**.
-5. En la lista de aplicaciones, haz clic en **Manage** sobre tu aplicación creada.
-6. Copia el **Client ID**.
-7. Haz clic en **New Secret** (Nuevo Secret) y copia el **Client Secret** generado.
+2. Registra tu aplicación con **OAuth Redirect URL**: `http://localhost:3000`.
+3. Copia el **Client ID** y genera un **Client Secret**.
 
 ---
 
 ## Paso 2: Configurar las Variables de Entorno (.env)
 
-Crea o edita el archivo `.env` en la raíz del proyecto (puedes basarte en `.env.example`):
+Crea el archivo `.env` en la raíz del proyecto basándote en `.env.example`:
 
 ```env
-# Credenciales de tu Aplicación en Twitch Console
+# Credenciales de Twitch
 TWITCH_CLIENT_ID=tu_client_id_aqui
 TWITCH_CLIENT_SECRET=tu_client_secret_aqui
-
-# Nombre del canal de Twitch al que se unirá el bot (sin espacios)
 TWITCH_CHANNEL=nombre_de_tu_canal
 
-# Configuración del servidor HTTPS local para OAuth
-PORT=3000
-REDIRECT_URI=https://localhost:3000
-SCOPES=user:read:chat user:write:chat chat:read chat:edit
+# Credenciales de Spotify
+SPOTIFY_CLIENT_ID=tu_spotify_client_id
+SPOTIFY_CLIENT_SECRET=tu_spotify_client_secret
+SPOTIFY_REDIRECT_URI=http://localhost:3000/spotify-callback
 
-# Opciones de Voz TTS (EdgeTTS)
-TTS_ALL_MESSAGES=false # Si lo cambias a true, el bot leerá todos los mensajes del chat
+# Servidor Web & Dashboard
+PORT=3000
+REDIRECT_URI=http://localhost:3000
 ```
 
 ---
 
-## 🔊 Integración de Sistema Multivoz (Text-to-Speech con EdgeTTS)
-
-El bot cuenta con un sistema de **3 voces diferenciadas**:
-
-1. **Voz General del Chat (3ra Voz - `VOICE_DEFAULT`)**:
-   - **Comportamiento**: Lee automáticamente en voz alta todos los mensajes normales que envíen los espectadores en el chat: `"[Usuario] dice: [Mensaje]"`.
-   - **Voz por defecto**: `es-US-PalomaNeural` (Voz femenina en español neutro).
-
-2. **Comando `!m <mensaje>` (Voz Femenina - `VOICE_FEMALE`)**:
-   - Escribir `!m Hola a todos` reproducirá el mensaje únicamente con la voz femenina secundaria (`es-MX-DaliaNeural`).
-
-3. **Comando `!h <mensaje>` (Voz Masculina - `VOICE_MALE`)**:
-   - Escribir `!h Saludos al canal` reproducirá el mensaje únicamente con la voz masculina (`es-MX-JorgeNeural`).
-
-4. **Cola de reproducción secuencial**:
-   - Todos los mensajes de voz se encolan para reproducirse secuencialmente en orden sin superposición.
-
----
-
 ## Paso 3: Instalación de Dependencias
-
-Ejecuta el siguiente comando en la terminal para instalar todos los paquetes necesarios:
 
 ```bash
 npm install
@@ -124,46 +101,77 @@ npm install
 
 ## Paso 4: Ejecución de la Aplicación
 
-Para iniciar el bot de Twitch, ejecuta:
+Para iniciar el bot y el servidor web:
 
 ```bash
 npm start
 ```
 
-O directamente con Node:
-
-```bash
-node index.js
-```
+- **Dashboard Web**: Accede desde tu navegador a `http://localhost:3000/`
+- **Overlay Spotify para OBS**: `http://127.0.0.1:3000/overlay`
+- **Overlay Alerta de Seguidores**: `http://127.0.0.1:3000/alert-follower`
 
 ---
 
-## ⚙️ Cómo Funciona el Sistema
+## 💬 Comandos del Chat de Twitch
 
-### 1. Autenticación OAuth 2.0 & Certificados SSL
-- En el primer inicio, el sistema genera automáticamente un certificado SSL autofirmado (`cert.pem` y `key.pem`) para ejecutar un servidor HTTPS seguro en `https://localhost:3000`.
-- Se abrirá automáticamente tu navegador predeterminado cargando la URL de autorización de Twitch (`https://id.twitch.tv/oauth2/authorize`).
-- Una vez que haces clic en **Autorizar**, Twitch redirige a `https://localhost:3000/callback` con un código de autorización.
-- El servidor HTTPS captura el código, lo intercambia por un `access_token` y un `refresh_token`, los guarda en `tokens.json` y cierra el servidor local.
+### 🎵 Comandos de Spotify *(Respuestas solo por texto en chat, sin audio TTS)*
+| Comando | Descripción |
+| :--- | :--- |
+| `!sr <canción o artista>` | Busca en Spotify y añade la canción a la cola de reproducción. |
+| `!cancion` | Muestra en el chat la canción que está sonando actualmente. |
+| `!siguiente` | Salta la canción actual en Spotify a la siguiente de la cola. |
+| `!cola` | Muestra las próximas canciones en la cola de reproducción. |
 
-### 2. Gestión y Renovación Automática de Tokens
-- El sistema valida el estado del token guardado en `tokens.json`.
-- Si el `access_token` ha expirado o está a menos de 5 minutos de expirar, el módulo `auth.js` solicita automáticamente un nuevo `access_token` a Twitch utilizando el `refresh_token` sin requerir que abras el navegador nuevamente.
-- Si Twitch devuelve un error de autenticación `401 Unauthorized` en cualquier momento, el bot renovará el token de inmediato de forma transparente.
+### 🎙️ Comandos de Texto a Voz (TTS)
+| Comando | Descripción |
+| :--- | :--- |
+| `!tts <mensaje>` | Lee el mensaje en voz alta usando la **Voz General / Predeterminada**. |
+| `!m <mensaje>` | Lee el mensaje usando la **Voz de Mujer** (`es-MX-DaliaNeural`). |
+| `!h <mensaje>` | Lee el mensaje usando la **Voz de Hombre** (`es-MX-JorgeNeural`). |
 
-### 3. Conexión al Chat e Interacción
-- El bot se conecta al servidor IRC seguro de Twitch (`irc.chat.twitch.tv:6697`) utilizando la librería `tmi.js` y el token de acceso obtenido (`oauth:<access_token>`).
-- Se une al canal configurado en `TWITCH_CHANNEL`.
-- **Comando integrado de prueba**: Escribe `!ping` en el chat del canal y el bot responderá `@usuario ¡pong! 🏓`.
-- Si se pierde la conexión de red, el sistema incluye un mecanismo de reconexión automática con reintentos incrementales.
-
-### 4. Sistema de Logging
-- Todos los mensajes de chat enviados por los usuarios se registran en el archivo `chat.log` incluyendo timestamp y nombre de usuario.
-- Todos los eventos de sistema, advertencias y errores se registran en `app.log` y en la consola formateados con colores.
+### 🤖 Comandos Generales
+| Comando | Descripción |
+| :--- | :--- |
+| `!comandos` (`!help`) | Lista en el chat y lee por voz todos los comandos activos del bot. |
 
 ---
 
-## 🛡️ Seguridad
-- **Nunca subas tu archivo `.env` o `tokens.json` a repositorios públicos.**
-- El `TWITCH_CLIENT_SECRET` y los tokens de acceso permanecen protegidos localmente.
-# bot_twitch
+## 🖥️ Dashboard Web & Indicadores en Tiempo Real
+
+El dashboard funciona como una **Single Page Application (SPA)** modular moderna:
+- **Gestión de la Cola de Spotify**: Icono de papelera (🗑️) junto a cada canción en la cola para eliminarla o saltarla con 1 clic.
+- **Estado de Stream en Vivo**: Detecta automáticamente si estás transmitiendo en directo en Twitch (`Stream: En Vivo`) u offline (`Stream: Offline`) consultando Twitch Helix API.
+- **Control de Voces TTS en Tiempo Real**: Tres chips interactivos (`Gen`, `Mujer`, `Hombre`) en la barra superior te permiten silenciar o activar cualquiera de las 3 voces individualmente con un solo clic.
+- **Monitor de Chat y Subtítulos**: Registra mensajes en vivo, lecturas por voz y eventos del sistema sin parpadeos vía Server-Sent Events (SSE).
+
+---
+
+## 🔊 Sistema Multivoz TTS e Interruptores Granulares
+
+- **Voz General (`Gen`)**: Utilizada en `!tts` o lectura automática del chat.
+- **Voz Femenina (`Mujer`)**: Activada mediante el comando `!m <mensaje>`.
+- **Voz Masculina (`Hombre`)**: Activada mediante el comando `!h <mensaje>`.
+- **Control Granular**: Puedes deshabilitar únicamente la voz masculina sin afectar la de mujer ni la general.
+- **Silenciador General**: Botón de altavoz global para pausar todo el audio TTS de inmediato.
+
+---
+
+## 🎨 Overlays para OBS Studio / Streamlabs
+
+### 1. Overlay de Spotify & Subtítulos (`/overlay`)
+- Muestra la portada del álbum en HD, título, artista y subtítulos flotantes de voz.
+- Personalizable mediante parámetros CSS/URL (`accent`, `opacity`, `theme`, `hideLabel`).
+
+### 2. Overlay de Alertas de Seguidores (`/alert-follower`)
+- Editor visual integrado en el Dashboard (`Overlays OBS`).
+- Múltiples diseños (Centrado, Banner, Compacto, Solo texto).
+- Soporte para **URLs de GIFs animados e imágenes personalizadas** con accesos directos de prueba.
+- Opciones para **quitar bordes** y activar **fondo 100% transparente**.
+- Integración de efectos de sonido (chime o URL personalizada de MP3).
+
+---
+
+## 🛡️ Seguridad y Buenas Prácticas
+
+- Mantén protegidos tus archivos `.env` y los tokens guardados en `tokens/*.json`. Nunca los subas a repositorios públicos.

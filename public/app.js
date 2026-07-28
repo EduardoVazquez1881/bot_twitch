@@ -96,6 +96,52 @@ function updateDashboardStatus(data) {
     isMuted = data.isMuted;
     updateMuteButton();
   }
+  if (data.voiceStatus) {
+    ['default', 'female', 'male'].forEach(key => {
+      const chip = document.getElementById(`btn-voice-${key}`);
+      if (chip) {
+        const isActive = Boolean(data.voiceStatus[key]);
+        chip.classList.toggle('active', isActive);
+        chip.classList.toggle('muted', !isActive);
+      }
+    });
+  }
+  if (data.streamStatus !== undefined) {
+    const dotStream = document.getElementById('dot-stream');
+    const textStream = document.getElementById('text-stream');
+    if (dotStream && textStream) {
+      if (data.streamStatus === 'offline') {
+        dotStream.className = 'dot';
+        textStream.textContent = 'Stream: Offline';
+      } else {
+        dotStream.className = 'dot live';
+        textStream.textContent = 'Stream: En Vivo';
+      }
+    }
+  }
+}
+
+async function toggleVoice(voiceKey) {
+  const chip = document.getElementById(`btn-voice-${voiceKey}`);
+  const isCurrentlyActive = chip ? chip.classList.contains('active') : true;
+  const newState = !isCurrentlyActive;
+
+  if (chip) {
+    chip.classList.toggle('active', newState);
+    chip.classList.toggle('muted', !newState);
+  }
+
+  try {
+    await fetch('/api/control', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'toggleVoice', voice: voiceKey, value: newState })
+    });
+    const labelMap = { default: 'General', female: 'Mujer (!m)', male: 'Hombre (!h)' };
+    addLogEntry('system', `<strong>[CONTROL]</strong> Voz <strong>${labelMap[voiceKey] || voiceKey}</strong> ${newState ? 'Activada' : 'Desactivada'}`);
+  } catch (err) {
+    console.error(`Error al conmutar la voz ${voiceKey}:`, err);
+  }
 }
 
 // Actualizar Widget de Spotify
@@ -254,18 +300,86 @@ function updateQueueList(queue) {
   if (!container) return;
 
   if (!queue || queue.length === 0) {
-    container.innerHTML = '<p style="font-size: 13px; color: var(--text-secondary);">La cola de Spotify está vacía.</p>';
+    container.innerHTML = '<p style="font-size: 13px; color: var(--text-secondary); text-align: center; padding: 12px 0;">La cola de reproducción está vacía.</p>';
     return;
   }
 
   container.innerHTML = queue.map((item, idx) => `
-    <div style="padding: 6px 10px; background: rgba(255,255,255,0.03); border-radius: 8px; border-left: 2px solid var(--accent-cyan); display: flex; justify-content: space-between; align-items: center;">
-      <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-        <strong style="font-size: 13px; color: var(--text-primary);">${idx + 1}. ${escapeHtml(item.track)}</strong>
-        <div style="font-size: 11px; color: var(--text-secondary);">${escapeHtml(item.artist)}</div>
+    <div style="padding: 8px 12px; background: rgba(255,255,255,0.03); border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 11px; font-weight: 700; color: var(--accent-cyan); width: 18px; text-align: center;">${idx + 1}</span>
+      <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1;">
+        <div style="font-size: 13px; font-weight: 600; color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${escapeHtml(item.track)}</div>
+        <div style="font-size: 11px; color: var(--text-secondary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">${escapeHtml(item.artist)}</div>
       </div>
+      <button class="btn-circle" onclick="removeFromQueue(${idx})" title="Eliminar de la cola" style="width: 26px; height: 26px; border-color: rgba(239,68,68,0.3); color: var(--danger); background: rgba(239,68,68,0.1); flex-shrink: 0;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+        </svg>
+      </button>
     </div>
   `).join('');
+}
+
+async function removeFromQueue(idx) {
+  try {
+    const res = await fetch('/api/control', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'removeQueueItem', index: idx })
+    });
+    const data = await res.json();
+    if (data.success) {
+      addLogEntry('system', `<strong>[SPOTIFY]</strong> Canción #${idx + 1} eliminada de la cola`);
+      fetchQueue();
+    }
+  } catch (err) {
+    console.error('Error eliminando canción de la cola:', err);
+  }
+}
+
+let currentOverlayTheme = '';
+
+function switchOverlayTab(tabId) {
+  document.querySelectorAll('.overlay-tab-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.overlay-tab-content').forEach(content => content.classList.remove('active'));
+
+  const targetContent = document.getElementById(tabId);
+  if (targetContent) targetContent.classList.add('active');
+
+  const activeBtn = Array.from(document.querySelectorAll('.overlay-tab-btn')).find(
+    btn => btn.getAttribute('onclick')?.includes(tabId)
+  );
+  if (activeBtn) activeBtn.classList.add('active');
+}
+
+function setOverlayTheme(themeName) {
+  currentOverlayTheme = themeName;
+  updateOverlayPreviewUrl();
+}
+
+function updateOverlayPreviewUrl() {
+  const customUrlInput = document.getElementById('overlay-custom-url');
+  const previewIframe = document.getElementById('overlay-preview-iframe');
+  const accentColor = document.getElementById('custom-accent')?.value.replace('#', '') || '';
+  const opacityVal = document.getElementById('custom-opacity')?.value || '92';
+  const hideLabel = document.getElementById('custom-hidelabel')?.checked;
+
+  const opacityLabel = document.getElementById('opacity-val-label');
+  if (opacityLabel) opacityLabel.textContent = `${opacityVal}%`;
+
+  const queryParams = new URLSearchParams();
+  if (currentOverlayTheme) queryParams.set('theme', currentOverlayTheme);
+  if (accentColor) queryParams.set('accent', accentColor);
+  if (opacityVal && opacityVal !== '92') queryParams.set('opacity', opacityVal);
+  if (hideLabel) queryParams.set('hideLabel', 'true');
+
+  const queryString = queryParams.toString() ? `?${queryParams.toString()}` : '';
+  const fullUrl = `http://127.0.0.1:3000/overlay${queryString}`;
+  const relativeUrl = `/overlay${queryString}`;
+
+  if (customUrlInput) customUrlInput.value = fullUrl;
+  if (previewIframe) previewIframe.src = relativeUrl;
 }
 
 function copyOverlayUrl(inputId, btnEl) {

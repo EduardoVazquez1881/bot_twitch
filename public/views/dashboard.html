@@ -1,28 +1,40 @@
 <div class="main-grid">
-  <!-- Left Column: Spotify Player & Queue -->
-  <div style="display: flex; flex-direction: column; gap: 24px;">
-    <!-- Spotify Widget Card -->
+  <!-- Left Column: Spotify Player & Controls -->
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <!-- Spotify Widget Card (Reproductor Moderno) -->
     <div class="card">
-      <div class="card-title">Reproductor Spotify</div>
+      <div class="card-title" style="justify-content: space-between;">
+        <span>Reproductor Spotify</span>
+        <span class="badge" style="font-size: 11px; padding: 4px 10px;">En Vivo</span>
+      </div>
+      
       <div class="spotify-player">
         <div class="album-art-container">
-          <img id="album-art" class="album-art" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&auto=format&fit=crop&q=80" alt="Album Art">
+          <img id="album-art" class="album-art" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect fill='%231a1d2e' width='180' height='180'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%2300f2fe' font-size='48' font-family='sans-serif'%3EMUSIC%3C/text%3E%3C/svg%3E" alt="Album Art">
         </div>
+
         <div class="spotify-track-info">
-          <h3 id="track-name">Cargando canción...</h3>
+          <h3 id="track-name">Esperando canción...</h3>
           <p id="artist-name">Conectando a Spotify</p>
         </div>
-        <div class="player-controls">
-          <button class="btn" id="btn-skip" onclick="skipSpotifyTrack()">Saltar Canción</button>
+
+        <div class="player-controls" style="margin-top: 8px;">
+          <button class="btn btn-primary" id="btn-skip" onclick="skipSpotifyTrack()" style="width: 100%;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 4 15 12 5 20 5 4"></polygon>
+              <line x1="19" y1="5" x2="19" y2="19"></line>
+            </svg>
+            <span>Saltar Canción</span>
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- Spotify Queue Card -->
+    <!-- Spotify Queue Card (Cola de canciones) -->
     <div class="card">
       <div class="card-title" style="justify-content: space-between;">
-        <span>Cola de Spotify</span>
-        <button class="btn" style="padding: 4px 10px; font-size: 12px;" onclick="fetchQueue()">Actualizar</button>
+        <span>Cola de Reproducción</span>
+        <button class="btn" style="padding: 4px 10px; font-size: 11px;" onclick="fetchQueue()">Actualizar</button>
       </div>
       <div id="queue-list" style="display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto;">
         <p style="font-size: 13px; color: var(--text-secondary);">No hay canciones en la cola.</p>
@@ -31,9 +43,9 @@
   </div>
 
   <!-- Right Column: Subtitles & Chat Live Stream -->
-  <div class="card" style="height: 100%;">
+  <div class="card" style="height: 100%; display: flex; flex-direction: column;">
     <div class="card-title" style="justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-      <span>Subtítulos & Actividad</span>
+      <span>Subtítulos & Actividad en Vivo</span>
       <div style="display: flex; align-items: center; gap: 12px;">
         <div class="log-filters">
           <button class="filter-btn active" onclick="filterLogs('all')">Todos</button>
@@ -47,7 +59,7 @@
     
     <div class="log-box" id="log-box">
       <div class="log-entry system">
-        <strong>[SISTEMA]</strong> Panel de control inicializado correctamente. Esperando eventos...
+        <strong>[SISTEMA]</strong> Panel de control inicializado. Escuchando eventos del chat y voz...
       </div>
     </div>
   </div>

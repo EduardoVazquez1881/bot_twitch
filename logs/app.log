@@ -1001,3 +1001,408 @@
 [2026-07-27 16:21:41] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
 [2026-07-27 16:24:35] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
 [2026-07-27 16:24:35] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:25:51] [INFO]: Recibida señal SIGTERM. Desconectando bot de chat...
+[2026-07-27 16:25:51] [INFO]: Recibida señal SIGTERM. Desconectando bot de chat...
+[2026-07-27 16:45:01] [INFO]: ====================================================
+[2026-07-27 16:45:01] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:45:01] [INFO]: ====================================================
+[2026-07-27 16:45:01] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:45:01] [INFO]: El access_token de Spotify expiró o está por expirar. Renovando...
+[2026-07-27 16:45:01] [INFO]: Renovando access_token de Spotify usando refresh_token...
+[2026-07-27 16:45:01] [INFO]: Interfaz Web & Dashboard accesible en: https://localhost:3000/
+[2026-07-27 16:45:01] [INFO]: Overlay para OBS (HTTP): http://127.0.0.1:3001/overlay
+[2026-07-27 16:45:02] [INFO]: Token de Spotify renovado exitosamente.
+[2026-07-27 16:45:02] [INFO]: Tokens de Spotify guardados correctamente en tokens/spotify_tokens.json
+[2026-07-27 16:45:02] [INFO]: El access_token ha expirado o está cerca de expirar. Intentando renovar...
+[2026-07-27 16:45:02] [INFO]: Renovando access_token de Twitch usando refresh_token...
+[2026-07-27 16:45:02] [INFO]: Tokens guardados correctamente en tokens.json
+[2026-07-27 16:45:02] [INFO]: Access Token renovado exitosamente. Nuevo tiempo de expiración: 12975s (7/27/2026, 8:21:17 PM).
+[2026-07-27 16:45:02] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:45:02] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:48:02] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:48:02] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:48:03] [INFO]: ====================================================
+[2026-07-27 16:48:03] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:48:03] [INFO]: ====================================================
+[2026-07-27 16:48:03] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:48:03] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:48:03] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:48:03] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12793 segundos.
+[2026-07-27 16:48:03] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:48:03] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:49:04] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:49:04] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:49:05] [INFO]: ====================================================
+[2026-07-27 16:49:05] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:49:05] [INFO]: ====================================================
+[2026-07-27 16:49:05] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:49:05] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:49:05] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:49:05] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12731 segundos.
+[2026-07-27 16:49:05] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:49:05] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:49:33] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:50:34] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:50:34] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:50:35] [INFO]: ====================================================
+[2026-07-27 16:50:35] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:50:35] [INFO]: ====================================================
+[2026-07-27 16:50:35] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:50:35] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:50:35] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:50:36] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12641 segundos.
+[2026-07-27 16:50:36] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:50:36] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:50:39] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:52:13] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:52:14] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:52:15] [INFO]: ====================================================
+[2026-07-27 16:52:15] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:52:15] [INFO]: ====================================================
+[2026-07-27 16:52:15] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:52:15] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:52:15] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:52:15] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12541 segundos.
+[2026-07-27 16:52:15] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:52:15] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:52:18] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:52:49] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:52:49] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:52:50] [INFO]: ====================================================
+[2026-07-27 16:52:50] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:52:50] [INFO]: ====================================================
+[2026-07-27 16:52:50] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:52:50] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:52:50] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:52:50] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12506 segundos.
+[2026-07-27 16:52:50] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:52:50] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:52:53] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:53:52] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:53:52] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:53:53] [INFO]: ====================================================
+[2026-07-27 16:53:53] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:53:53] [INFO]: ====================================================
+[2026-07-27 16:53:53] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:53:53] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:53:53] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:53:54] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12443 segundos.
+[2026-07-27 16:53:54] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:53:54] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:53:57] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:55:38] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:55:38] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:55:39] [INFO]: ====================================================
+[2026-07-27 16:55:39] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:55:39] [INFO]: ====================================================
+[2026-07-27 16:55:39] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:55:39] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:55:39] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:55:40] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12337 segundos.
+[2026-07-27 16:55:40] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:55:40] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:55:42] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:57:00] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:57:00] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:57:01] [INFO]: ====================================================
+[2026-07-27 16:57:01] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:57:01] [INFO]: ====================================================
+[2026-07-27 16:57:01] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:57:01] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:57:01] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:57:01] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12255 segundos.
+[2026-07-27 16:57:01] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:57:02] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:57:04] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:58:57] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:58:57] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:58:58] [INFO]: ====================================================
+[2026-07-27 16:58:58] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:58:58] [INFO]: ====================================================
+[2026-07-27 16:58:58] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:58:58] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:58:58] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:58:58] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12138 segundos.
+[2026-07-27 16:58:58] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:58:59] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 16:59:01] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 16:59:49] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 16:59:49] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 16:59:50] [INFO]: ====================================================
+[2026-07-27 16:59:50] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 16:59:50] [INFO]: ====================================================
+[2026-07-27 16:59:50] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 16:59:50] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 16:59:50] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 16:59:50] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12086 segundos.
+[2026-07-27 16:59:50] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 16:59:50] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:00:49] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:00:49] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:00:50] [INFO]: ====================================================
+[2026-07-27 17:00:50] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:00:50] [INFO]: ====================================================
+[2026-07-27 17:00:50] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:00:50] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:00:50] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:00:51] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 12026 segundos.
+[2026-07-27 17:00:51] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:00:51] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:01:24] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:02:13] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:02:14] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:02:15] [INFO]: ====================================================
+[2026-07-27 17:02:15] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:02:15] [INFO]: ====================================================
+[2026-07-27 17:02:15] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:02:15] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:02:15] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:02:15] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11942 segundos.
+[2026-07-27 17:02:15] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:02:15] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:02:18] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:03:29] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:03:29] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:03:30] [INFO]: ====================================================
+[2026-07-27 17:03:30] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:03:30] [INFO]: ====================================================
+[2026-07-27 17:03:30] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:03:30] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:03:30] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:03:31] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11866 segundos.
+[2026-07-27 17:03:31] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:03:31] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:03:33] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:03:43] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:43] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:44] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo la cola de Spotify: API rate limit exceeded
+[2026-07-27 17:03:45] [ERROR]: Error obteniendo canción actual de Spotify: API rate limit exceeded
+[2026-07-27 17:05:38] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:05:38] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:05:39] [INFO]: ====================================================
+[2026-07-27 17:05:39] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:05:39] [INFO]: ====================================================
+[2026-07-27 17:05:39] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:05:39] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:05:39] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:05:39] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11737 segundos.
+[2026-07-27 17:05:39] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:05:40] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:05:43] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:06:49] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:06:49] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:06:50] [INFO]: ====================================================
+[2026-07-27 17:06:50] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:06:50] [INFO]: ====================================================
+[2026-07-27 17:06:50] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:06:50] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:06:50] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:06:51] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11666 segundos.
+[2026-07-27 17:06:51] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:06:51] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:06:53] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:09:13] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:09:13] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:09:14] [INFO]: ====================================================
+[2026-07-27 17:09:14] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:09:14] [INFO]: ====================================================
+[2026-07-27 17:09:14] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:09:14] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:09:14] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:09:14] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11522 segundos.
+[2026-07-27 17:09:14] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:09:15] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:09:18] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:09:48] [INFO]: Alerta de prueba de seguidor ejecutada para: EduardoVazquez
+[2026-07-27 17:09:56] [INFO]: Alerta de prueba de seguidor ejecutada para: EduardoVazquez
+[2026-07-27 17:10:06] [INFO]: Alerta de prueba de seguidor ejecutada para: JFAFJAFJap
+[2026-07-27 17:10:17] [INFO]: Alerta de prueba de seguidor ejecutada para: JFAFJAFJap
+[2026-07-27 17:11:46] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:11:46] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:11:47] [INFO]: ====================================================
+[2026-07-27 17:11:47] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:11:47] [INFO]: ====================================================
+[2026-07-27 17:11:47] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:11:48] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:11:48] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:11:48] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11369 segundos.
+[2026-07-27 17:11:48] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:11:48] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:13:23] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:13:23] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:13:24] [INFO]: ====================================================
+[2026-07-27 17:13:24] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:13:24] [INFO]: ====================================================
+[2026-07-27 17:13:24] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:13:24] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:13:24] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:13:24] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11273 segundos.
+[2026-07-27 17:13:24] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:13:24] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:17:22] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:17:22] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:17:23] [INFO]: ====================================================
+[2026-07-27 17:17:23] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:17:23] [INFO]: ====================================================
+[2026-07-27 17:17:23] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:17:23] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:17:23] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:17:24] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 11033 segundos.
+[2026-07-27 17:17:24] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:17:24] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:18:15] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:18:15] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:18:16] [INFO]: ====================================================
+[2026-07-27 17:18:16] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:18:16] [INFO]: ====================================================
+[2026-07-27 17:18:16] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:18:16] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:18:16] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:18:17] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10980 segundos.
+[2026-07-27 17:18:17] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:18:17] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:18:19] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10977 segundos.
+[2026-07-27 17:20:12] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10864 segundos.
+[2026-07-27 17:20:17] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10860 segundos.
+[2026-07-27 17:20:49] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10828 segundos.
+[2026-07-27 17:21:48] [INFO]: Lectura automática (Voz General) de jajaeledu: "ola"
+[2026-07-27 17:21:48] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: ola"
+[2026-07-27 17:22:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "hola"
+[2026-07-27 17:22:01] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: hola"
+[2026-07-27 17:22:17] [INFO]: Comando !h (Voz Hombre) de jajaeledu: "ola"
+[2026-07-27 17:22:17] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: ola"
+[2026-07-27 17:22:21] [INFO]: Lectura automática (Voz General) de jajaeledu: "goa"
+[2026-07-27 17:22:21] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: goa"
+[2026-07-27 17:22:36] [INFO]: Lectura automática (Voz General) de jajaeledu: "Ola es una prueba de audio"
+[2026-07-27 17:22:36] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: Ola es una prueba de audio"
+[2026-07-27 17:23:00] [INFO]: Lectura automática (Voz General) de jajaeledu: "aaa"
+[2026-07-27 17:23:00] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: aaa"
+[2026-07-27 17:23:00] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:00] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:00] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "aa"
+[2026-07-27 17:23:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:02] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:03] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:03] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:23:04] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:08] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:11] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:15] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:17] [INFO]: TTS Silenciado desde la interfaz web.
+[2026-07-27 17:23:18] [INFO]: TTS Activado desde la interfaz web.
+[2026-07-27 17:23:18] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: aa"
+[2026-07-27 17:23:22] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:26] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:29] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:33] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:35] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:23:35] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:23:35] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:25:44] [INFO]: ====================================================
+[2026-07-27 17:25:44] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:25:44] [INFO]: ====================================================
+[2026-07-27 17:25:44] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:25:44] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:25:44] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:25:45] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10532 segundos.
+[2026-07-27 17:25:45] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:25:45] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:25:48] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10528 segundos.
+[2026-07-27 17:25:51] [INFO]: Voz [default] Desactivada desde el Dashboard.
+[2026-07-27 17:26:01] [INFO]: Lectura automática (Voz General) de jajaeledu: "aa"
+[2026-07-27 17:26:01] [INFO]: [MUTE] Voz General Desactivada. Omitiendo audio: "jajaeledu dice: aa"
+[2026-07-27 17:26:04] [INFO]: Lectura automática (Voz General) de jajaeledu: "d"
+[2026-07-27 17:26:04] [INFO]: [MUTE] Voz General Desactivada. Omitiendo audio: "jajaeledu dice: d"
+[2026-07-27 17:26:07] [INFO]: Voz [default] Activada desde el Dashboard.
+[2026-07-27 17:26:09] [INFO]: Lectura automática (Voz General) de jajaeledu: "a"
+[2026-07-27 17:26:10] [INFO]: 🔊 Generando y reproduciendo voz TTS: "jajaeledu dice: a"
+[2026-07-27 17:26:14] [INFO]: Voz [default] Desactivada desde el Dashboard.
+[2026-07-27 17:26:57] [INFO]: Sincronización en tiempo real: Sonando "B.Y.O.B." - System Of A Down
+[2026-07-27 17:27:13] [INFO]: Sincronización en tiempo real: Sonando "The Rains of Castamere" - Ramin Djawadi, Serj Tankian
+[2026-07-27 17:27:15] [INFO]: Sincronización en tiempo real: Sonando "sueños" - Ed Maverick
+[2026-07-27 17:27:35] [INFO]: Canción saltada en Spotify.
+[2026-07-27 17:27:38] [INFO]: Sincronización en tiempo real: Sonando "violento" - Ed Maverick
+[2026-07-27 17:27:42] [INFO]: Canción saltada en Spotify.
+[2026-07-27 17:27:43] [INFO]: Sincronización en tiempo real: Sonando "Rains of Castamere (Cello Trio)" - ReCirc
+[2026-07-27 17:27:44] [INFO]: Canción saltada en Spotify.
+[2026-07-27 17:27:45] [INFO]: Sincronización en tiempo real: Sonando "TODA LA GENTE" - Dillom
+[2026-07-27 17:28:54] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:28:54] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:28:55] [INFO]: ====================================================
+[2026-07-27 17:28:55] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:28:55] [INFO]: ====================================================
+[2026-07-27 17:28:55] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:28:55] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:28:55] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:28:55] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10341 segundos.
+[2026-07-27 17:28:55] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:28:56] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:28:58] [INFO]: Sincronización en tiempo real: Sonando "TODA LA GENTE" - Dillom
+[2026-07-27 17:28:59] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 10337 segundos.
+[2026-07-27 17:30:01] [INFO]: 🔊 Generando y reproduciendo voz TTS: "Prueba de voz desde la interfaz web."
+[2026-07-27 17:35:35] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:35:35] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.
+[2026-07-27 17:35:36] [INFO]: ====================================================
+[2026-07-27 17:35:36] [INFO]: Iniciando Sistema de Autenticación & Bot Chat Twitch
+[2026-07-27 17:35:36] [INFO]: ====================================================
+[2026-07-27 17:35:36] [INFO]: Inicializando autenticación con Spotify Web API...
+[2026-07-27 17:35:36] [INFO]: Interfaz Web & Dashboard accesible en: http://localhost:3000/
+[2026-07-27 17:35:36] [INFO]: Overlay para OBS accesible en: http://127.0.0.1:3000/overlay
+[2026-07-27 17:35:36] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 9940 segundos.
+[2026-07-27 17:35:36] [INFO]: Conectando al chat de Twitch IRC para el canal #jajaeledu...
+[2026-07-27 17:35:37] [INFO]: ¡Conectado exitosamente al chat IRC de Twitch (irc-ws.chat.twitch.tv:443)!
+[2026-07-27 17:35:39] [INFO]: Sincronización en tiempo real: Sonando "TODA LA GENTE" - Dillom
+[2026-07-27 17:35:39] [INFO]: Token válido para el canal de Twitch. Expira en aproximadamente 9937 segundos.
+[2026-07-27 17:35:55] [INFO]: Elemento #10 eliminado de la cola desde el Dashboard.
+[2026-07-27 17:36:08] [INFO]: Voz [default] Desactivada desde el Dashboard.
+[2026-07-27 17:36:10] [INFO]: Voz [default] Activada desde el Dashboard.
+[2026-07-27 17:39:55] [INFO]: Recibida señal SIGINT. Desconectando bot de chat...
+[2026-07-27 17:39:55] [WARN]: Desconectado del chat IRC de Twitch. Razón: Connection closed.

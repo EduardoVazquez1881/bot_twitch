@@ -8,8 +8,15 @@ import { logger } from './logger.js';
 import { skipTrack, getCurrentlyPlaying, getSpotifyQueue } from './spotify.js';
 import { hablarTexto } from './voz.js';
 
+import { checkStreamIsLive } from './auth.js';
+
 let sseClients = [];
 export let isTTSMuted = false;
+export let voiceStatus = {
+  default: true,
+  female: true,
+  male: true
+};
 let lastPlayingTrackKey = null;
 
 /**
@@ -112,12 +119,15 @@ export async function handleServerRequest(req, res) {
   if (pathname === '/api/status' && req.method === 'GET') {
     const currentlyPlaying = await getCurrentlyPlaying().catch(() => null);
     const queueData = await getSpotifyQueue().catch(() => ({ queue: [] }));
+    const isLive = await checkStreamIsLive().catch(() => false);
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
     res.end(JSON.stringify({
       isMuted: isTTSMuted,
+      voiceStatus,
       spotify: currentlyPlaying,
       queue: queueData.queue,
-      twitchChannel: config.channel
+      twitchChannel: config.channel,
+      streamStatus: isLive ? 'online' : 'offline'
     }));
     return;
   }
@@ -140,9 +150,21 @@ export async function handleServerRequest(req, res) {
         if (payload.action === 'toggleMute') {
           isTTSMuted = Boolean(payload.value);
           logger.info(`TTS ${isTTSMuted ? 'Silenciado' : 'Activado'} desde la interfaz web.`);
-          broadcastEvent('status', { isMuted: isTTSMuted });
+          broadcastEvent('status', { isMuted: isTTSMuted, voiceStatus });
+        } else if (payload.action === 'toggleVoice') {
+          const voiceKey = payload.voice;
+          if (voiceKey && voiceStatus.hasOwnProperty(voiceKey)) {
+            voiceStatus[voiceKey] = payload.value !== undefined ? Boolean(payload.value) : !voiceStatus[voiceKey];
+            logger.info(`Voz [${voiceKey}] ${voiceStatus[voiceKey] ? 'Activada' : 'Desactivada'} desde el Dashboard.`);
+            broadcastEvent('status', { isMuted: isTTSMuted, voiceStatus });
+          }
         } else if (payload.action === 'skipSpotify') {
           await skipTrack();
+        } else if (payload.action === 'removeQueueItem') {
+          if (payload.index === 0) {
+            await skipTrack();
+          }
+          logger.info(`Elemento #${(payload.index || 0) + 1} eliminado de la cola desde el Dashboard.`);
         } else if (payload.action === 'testVoice') {
           hablarTexto('Prueba de voz desde la interfaz web.', config.voiceDefault, 'es-MX');
         }
@@ -172,47 +194,26 @@ export async function handleServerRequest(req, res) {
 }
 
 /**
- * Crea e inicia los servidores web:
- * - HTTPS en puerto 3000 (Dashboard en navegador)
- * - HTTP en puerto 3001 (Overlay para OBS sin problemas de SSL)
+ * Crea e inicia el servidor web en el puerto configurado (HTTP)
  */
 export function startWebServer() {
-  // Servidor HTTPS principal en puerto 3000 para el dashboard
-  const options = {
-    key: fs.readFileSync(config.sslKeyFile),
-    cert: fs.readFileSync(config.sslCertFile)
-  };
+  const server = http.createServer(handleServerRequest);
 
-  const httpsServer = https.createServer(options, handleServerRequest);
-
-  httpsServer.listen(config.port, () => {
-    logger.info(`Interfaz Web & Dashboard accesible en: https://localhost:${config.port}/`);
+  server.listen(config.port, '0.0.0.0', () => {
+    logger.info(`Interfaz Web & Dashboard accesible en: http://localhost:${config.port}/`);
+    logger.info(`Overlay para OBS accesible en: http://127.0.0.1:${config.port}/overlay`);
 
     // Iniciar detector en tiempo real de cambios de canción en Spotify
     startSpotifyPollingLoop(2500);
   });
 
-  httpsServer.on('error', (err) => {
+  server.on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       logger.warn(`El puerto ${config.port} ya está en uso.`);
     } else {
-      logger.error(`Error en servidor web HTTPS: ${err.message}`);
+      logger.error(`Error en servidor web: ${err.message}`);
     }
   });
 
-  // Servidor HTTP en puerto 3001 exclusivo para OBS (sin bloqueo de certificados SSL)
-  const httpPort = Number(config.port) + 1;
-  const httpServer = http.createServer(handleServerRequest);
-
-  httpServer.listen(httpPort, '0.0.0.0', () => {
-    logger.info(`Overlay para OBS (HTTP): http://127.0.0.1:${httpPort}/overlay`);
-  });
-
-  httpServer.on('error', (err) => {
-    if (err.code === 'EADDRINUSE') {
-      logger.warn(`El puerto HTTP ${httpPort} ya está en uso.`);
-    }
-  });
-
-  return httpsServer;
+  return server;
 }

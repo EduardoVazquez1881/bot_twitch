@@ -75,80 +75,71 @@ export class TwitchChatBot {
       if (self) return;
 
       const trimmedMessage = message.trim();
-      const lowerMsg = trimmedMessage.toLowerCase();      // Comandos de Spotify
-      if (lowerMsg === '!song' || lowerMsg === '!cancion' || lowerMsg === '!np') {
+      // Comandos de Spotify (solo respuesta de texto en chat, sin audio TTS)
+      if (lowerMsg === '!cancion') {
         const currentlyPlaying = await getCurrentlyPlaying();
         if (currentlyPlaying) {
           const textMsg = `Sonando ahora: ${currentlyPlaying.track} - ${currentlyPlaying.artist}`;
           await this.sendMessage(channel, `@${username} ${textMsg}`);
-          hablarTexto(`Sonando ahora: ${currentlyPlaying.track} de ${currentlyPlaying.artist}`, config.voiceDefault, 'es-MX');
         } else {
           await this.sendMessage(channel, `@${username} No hay ninguna canción reproduciéndose en Spotify actualmente.`);
-          hablarTexto('No hay ninguna canción reproduciéndose en Spotify actualmente.', config.voiceDefault, 'es-MX');
         }
-      } else if (lowerMsg.startsWith('!sr ') || lowerMsg.startsWith('!pedir ')) {
+      } else if (lowerMsg.startsWith('!sr ')) {
         const partes = trimmedMessage.split(' ');
         const query = partes.slice(1).join(' ').trim();
         if (query) {
           const res = await searchAndQueueTrack(query);
           if (res.success) {
             await this.sendMessage(channel, `@${username} Canción añadida a la cola: ${res.trackName} - ${res.artistName}`);
-            hablarTexto(`${username} añadió a la cola de Spotify: ${res.trackName} de ${res.artistName}`, config.voiceDefault, 'es-MX');
           } else {
             await this.sendMessage(channel, `@${username} ${res.message}`);
           }
         } else {
           await this.sendMessage(channel, `@${username} Uso correcto: !sr <nombre de la canción o artista>`);
         }
-      } else if (lowerMsg === '!skip' || lowerMsg === '!siguiente') {
+      } else if (lowerMsg === '!siguiente') {
         const skipped = await skipTrack();
         if (skipped) {
           await this.sendMessage(channel, `@${username} Canción saltada en Spotify.`);
-          hablarTexto(`${username} saltó la canción en Spotify.`, config.voiceDefault, 'es-MX');
         } else {
           await this.sendMessage(channel, `@${username} No se pudo saltar la canción. Asegúrate de tener Spotify activo.`);
         }
-      } else if (lowerMsg === '!queue' || lowerMsg === '!cola') {
+      } else if (lowerMsg === '!cola') {
         const queueData = await getSpotifyQueue();
         if (queueData && queueData.queue && queueData.queue.length > 0) {
           const nextSongs = queueData.queue.slice(0, 3).map((item, idx) => `${idx + 1}. ${item.track} - ${item.artist}`).join(' | ');
           const textMsg = `Próximas canciones: ${nextSongs}`;
           await this.sendMessage(channel, `@${username} ${textMsg}`);
-          hablarTexto(`Próxima canción en cola: ${queueData.queue[0].track} de ${queueData.queue[0].artist}`, config.voiceDefault, 'es-MX');
         } else {
           await this.sendMessage(channel, `@${username} La cola de Spotify está vacía.`);
-          hablarTexto('La cola de Spotify está vacía.', config.voiceDefault, 'es-MX');
         }
 
-      // Comandos de voz explícitos por género
+      // Comandos de voz TTS
+      } else if (lowerMsg.startsWith('!tts ')) {
+        const partes = trimmedMessage.split(' ');
+        const textoAHablar = partes.slice(1).join(' ').trim();
+        if (textoAHablar) {
+          logger.info(`Comando !tts recibido de ${username}: "${textoAHablar}"`);
+          hablarTexto(textoAHablar, config.voiceDefault, 'es-MX');
+        }
       } else if (lowerMsg.startsWith('!m ')) {
         const mensajeTexto = trimmedMessage.substring(3).trim();
         if (mensajeTexto) {
           logger.info(`Comando !m (Voz Mujer) de ${username}: "${mensajeTexto}"`);
           hablarTexto(`${username} dice: ${mensajeTexto}`, config.voiceFemale, 'es-MX');
         }
+      } else if (lowerMsg === '!comandos' || lowerMsg === '!help') {
+        const textMsg = `Comandos disponibles: !sr <canción> | !cancion | !siguiente | !cola | !tts <texto> | !m <texto> | !h <texto>`;
+        await this.sendMessage(channel, `@${username} ${textMsg}`);
+        hablarTexto(`Los comandos disponibles son: sr para pedir canción, canción, siguiente, cola, tts, m y h.`, config.voiceDefault, 'es-MX');
       } else if (lowerMsg.startsWith('!h ')) {
         const mensajeTexto = trimmedMessage.substring(3).trim();
         if (mensajeTexto) {
           logger.info(`Comando !h (Voz Hombre) de ${username}: "${mensajeTexto}"`);
           hablarTexto(`${username} dice: ${mensajeTexto}`, config.voiceMale, 'es-MX');
         }
-      } else if (lowerMsg === '!ping') {
-        logger.info(`Comando !ping detectado de ${username}. Respondiendo !pong con voz`);
-        await this.sendMessage(channel, `@${username} ¡pong!`);
-        hablarTexto('¡Pong!', config.voiceDefault, 'es-MX');
-      } else if (lowerMsg === '!bot') {
-        await this.sendMessage(channel, `@${username} Bot de Twitch activo.`);
-        hablarTexto('Bot de Twitch activo.', config.voiceDefault, 'es-MX');
-      } else if (lowerMsg.startsWith('!habla ') || lowerMsg.startsWith('!tts ') || lowerMsg.startsWith('!say ')) {
-        const partes = trimmedMessage.split(' ');
-        const textoAHablar = partes.slice(1).join(' ').trim();
-        if (textoAHablar) {
-          logger.info(`Comando de voz recibido de ${username}: "${textoAHablar}"`);
-          hablarTexto(textoAHablar, config.voiceDefault, 'es-MX');
-        }
       } else if (config.ttsAllMessages) {
-        // Lectura automática de cualquier mensaje del chat usando la 3ra voz (VOICE_DEFAULT)
+        // Lectura automática de cualquier mensaje del chat usando la voz predeterminada
         logger.info(`Lectura automática (Voz General) de ${username}: "${trimmedMessage}"`);
         hablarTexto(`${username} dice: ${trimmedMessage}`, config.voiceDefault, 'es-MX');
       }

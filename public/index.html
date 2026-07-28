@@ -75,15 +75,24 @@
             <span class="dot active" id="dot-twitch"></span>
             <span id="text-twitch">Twitch: Conectado</span>
           </div>
+          <div class="badge" id="badge-stream">
+            <span class="dot" id="dot-stream"></span>
+            <span id="text-stream">Stream: Offline</span>
+          </div>
           <div class="badge" id="badge-spotify">
             <span class="dot active" id="dot-spotify"></span>
             <span id="text-spotify">Spotify: Activo</span>
           </div>
           <div class="badge" id="badge-tts" style="display: flex; align-items: center; gap: 8px;">
             <span class="dot active" id="dot-tts"></span>
-            <span id="text-tts">TTS: Activo</span>
+            <span id="text-tts" style="font-weight: 600;">TTS:</span>
+            <div class="voice-toggles" style="display: flex; gap: 4px;">
+              <button class="voice-chip active" id="btn-voice-default" onclick="toggleVoice('default')" title="Voz General (Paloma)">Gen</button>
+              <button class="voice-chip active" id="btn-voice-female" onclick="toggleVoice('female')" title="Voz Mujer (!m)">Mujer</button>
+              <button class="voice-chip active" id="btn-voice-male" onclick="toggleVoice('male')" title="Voz Hombre (!h)">Hombre</button>
+            </div>
             <button class="btn-circle btn-circle-mute" id="btn-mute" onclick="toggleMuteTTS()"
-              title="Silenciar / Activar TTS">
+              title="Silenciar / Activar Todo el TTS">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M11 5L6 9H2v6h4l5 4V5z" />
                 <line x1="23" y1="9" x2="17" y2="15" />

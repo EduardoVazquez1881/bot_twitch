@@ -1,9 +1,9 @@
 {
-  "access_token": "BQCeITnKvstTKgSdCnJ6c0B1inJz5-Tqk56ZQadPEYDLKBt4D2DcwwCGCVxrMNPOgUiOcGqd4UfKry-wxFM_d4xOkyczBkT_0lvevTOIVjHHSwzbgnReK1Gw9Xc7qMVCICYCIVUt3bxG_FlIH5fxBXTiFC3rAQqVKcTmN4qrzzcZ_AQHe88rXpvEzZZyD2JhGPMTp3wXNDzFl79vr1s83ac1u2eq-PdAFtF3n5WvOR3ECPQa3yFJxplz0mKShqUCjA",
+  "access_token": "BQCfY3Z_KppycVLLbmokeOdcg6n5OSPA2REB3u_GnwF3u2xiNZ5x7Q0O8LnUSBpknZ5L4znrrlEUL6Xu84Rv64VoPNnc1bJmGqqWbe_s_ZQTZtplvm8b187h2db2fzYKa2xuqAyyjrbE-V8VZ3gCWUgMGS9aJOdmQRxV7uFRthmMIBn_L8SsyJEVVHhE2wkImMghFLiMdio8BXpeamdnf59SQnF4Srg6ZrYR6LJ5RhkZHuZMCmjYpjPGls9daJvnjw",
   "refresh_token": "AQAj1Fo7OJKyKNTuM0qTo_MCZiyd3wBO1OfroXvJZLGIjbq_7vyXjAmuV3bkNGn1iLTMcHT8chq3zN4B3SZaMOMjyiANNGb_E4ehgRgsykOalDQSeCjlwGL4g1au1dRzAis",
   "scope": "user-modify-playback-state user-read-playback-state user-read-currently-playing",
   "token_type": "Bearer",
   "expires_in": 3600,
-  "expires_at": 1785195752972,
-  "updated_at": "2026-07-27T22:42:32.972Z"
+  "expires_at": 1785199502008,
+  "updated_at": "2026-07-27T23:45:02.008Z"
 }

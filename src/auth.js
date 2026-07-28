@@ -284,3 +284,28 @@ export async function getValidAccessToken() {
   logger.info(`Token válido para el canal de Twitch. Expira en aproximadamente ${remainingSecs} segundos.`);
   return tokens.access_token;
 }
+
+/**
+ * Consulta la API Helix de Twitch para verificar en tiempo real si el canal está en directo
+ */
+export async function checkStreamIsLive(channelName) {
+  try {
+    const token = await getValidAccessToken().catch(() => null);
+    if (!token || !config.clientId) return false;
+    const cleanChannel = (channelName || config.channel || '').replace('#', '').toLowerCase();
+    if (!cleanChannel) return false;
+
+    const response = await axios.get(`https://api.twitch.tv/helix/streams?user_login=${cleanChannel}`, {
+      headers: {
+        'Client-ID': config.clientId,
+        'Authorization': `Bearer ${token}`
+      },
+      timeout: 5000
+    });
+
+    const isLive = Boolean(response.data && response.data.data && response.data.data.length > 0);
+    return isLive;
+  } catch (err) {
+    return false;
+  }
+}

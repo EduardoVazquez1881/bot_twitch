@@ -5,7 +5,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { spawn } from 'child_process';
 import { logger } from './logger.js';
-import { broadcastEvent, isTTSMuted } from './server.js';
+import { broadcastEvent, isTTSMuted, voiceStatus } from './server.js';
+import { config } from './config.js';
 
 const sound = playsound();
 const __filename = fileURLToPath(import.meta.url);
@@ -101,16 +102,32 @@ async function processQueue() {
 /**
  * Encola un texto para ser reproducido por voz TTS sin superposición
  */
-export function hablarTexto(texto, voice = 'es-MX-DaliaNeural', lang = 'es-MX') {
+export function hablarTexto(texto, voice = config.voiceDefault, lang = 'es-MX') {
   if (!texto || typeof texto !== 'string' || texto.trim().length === 0) return;
 
   // Transmitir evento SSE para Subtítulos en Vivo del Dashboard y OBS Overlay
   broadcastEvent('tts', { text: texto.trim(), voice });
 
-  // Si el TTS está silenciado desde el Dashboard, no reproducir por altavoz
+  // Si el TTS está silenciado globalmente
   if (isTTSMuted) {
-    logger.info(`[MUTE] TTS Silenciado. Omitiendo audio: "${texto.trim()}"`);
+    logger.info(`[MUTE] TTS Silenciado Globalmente. Omitiendo audio: "${texto.trim()}"`);
     return;
+  }
+
+  // Verificar si la voz específica está desactivada individualmente desde la web
+  if (voiceStatus) {
+    if (voice === config.voiceFemale && !voiceStatus.female) {
+      logger.info(`[MUTE] Voz de Mujer (!m) Desactivada. Omitiendo audio: "${texto.trim()}"`);
+      return;
+    }
+    if (voice === config.voiceMale && !voiceStatus.male) {
+      logger.info(`[MUTE] Voz de Hombre (!h) Desactivada. Omitiendo audio: "${texto.trim()}"`);
+      return;
+    }
+    if (voice === config.voiceDefault && !voiceStatus.default) {
+      logger.info(`[MUTE] Voz General Desactivada. Omitiendo audio: "${texto.trim()}"`);
+      return;
+    }
   }
 
   audioQueue.push({ texto: texto.trim(), voice, lang });

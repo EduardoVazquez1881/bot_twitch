@@ -1,35 +1,112 @@
-<div style="display: flex; flex-direction: column; gap: 24px;">
-  <!-- Card: Spotify Player Overlay -->
-  <div class="card">
-    <div class="card-title">Widget de Spotify en Tiempo Real (OBS / Streamlabs)</div>
-    <p style="font-size: 13px; color: var(--text-secondary);">
-      Añade esta fuente de navegador a tu software de transmisión (OBS / Streamlabs) para mostrar la canción que está sonando en tiempo real con su carátula oficial.
-    </p>
+<div class="overlays-container">
+  <!-- Tabs / Categorías de Overlays -->
+  <div class="overlay-nav-tabs">
+    <button class="overlay-tab-btn active" onclick="switchOverlayTab('spotify-tab')">
+      <span>Widget de Spotify</span>
+    </button>
+    <button class="overlay-tab-btn" onclick="switchOverlayTab('subtitles-tab')">
+      <span>Subtítulos TTS</span>
+    </button>
+    <button class="overlay-tab-btn" onclick="switchOverlayTab('alerts-tab')">
+      <span>Alertas de Chat</span>
+    </button>
+  </div>
 
-    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 8px;">
-      <label style="font-size: 12px; color: var(--text-muted); font-weight: 500;">URL para OBS (HTTP Puerto 3001 — sin bloqueo SSL):</label>
-      <div style="display: flex; gap: 10px;">
-        <input type="text" id="overlay-url-ip" readonly value="http://127.0.0.1:3001/overlay" style="flex: 1; padding: 10px 14px; border-radius: var(--radius-md); border: 1px solid var(--border-card); background: rgba(0,0,0,0.3); color: var(--accent-cyan); font-family: monospace; font-size: 13px;">
-        <button class="btn btn-primary" onclick="copyOverlayUrl('overlay-url-ip', this)">Copiar URL</button>
-      </div>
-    </div>
+  <!-- SECCIÓN 1: SPOTIFY OVERLAY -->
+  <div class="overlay-tab-content active" id="spotify-tab">
+    <div class="overlay-grid">
+      <!-- Ajustes del Widget -->
+      <div class="card">
+        <div class="card-title">Estilo & Personalización</div>
 
-    <!-- Recommended Dimensions -->
-    <div style="display: flex; gap: 16px; margin-top: 12px;">
-      <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); font-size: 12px;">
-        <strong style="color: var(--text-primary);">Ancho recomendado:</strong> 500 px
-      </div>
-      <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); font-size: 12px;">
-        <strong style="color: var(--text-primary);">Alto recomendado:</strong> 150 px
-      </div>
-    </div>
+        <div class="control-group">
+          <label class="control-label">Tema del Widget:</label>
+          <div class="theme-buttons-grid">
+            <button class="btn btn-primary" onclick="setOverlayTheme('')">Clásico</button>
+            <button class="btn" onclick="setOverlayTheme('neon')">Neón</button>
+            <button class="btn" onclick="setOverlayTheme('compact')">Compacto</button>
+            <button class="btn" onclick="setOverlayTheme('pill')">Píldora</button>
+            <button class="btn" onclick="setOverlayTheme('minimal')">Sin Fondo</button>
+          </div>
+        </div>
 
-    <!-- Interactive Live Preview Box -->
-    <div style="margin-top: 16px;">
-      <label style="font-size: 12px; color: var(--text-muted); font-weight: 500; display: block; margin-bottom: 8px;">Vista previa en vivo (Fondo transparente):</label>
-      <div style="padding: 16px; border-radius: 12px; background: repeating-conic-gradient(#111625 0% 25%, #0a0d18 0% 50%) 50% / 20px 20px; border: 1px dashed rgba(255,255,255,0.15);">
-        <iframe src="/overlay" style="width: 100%; height: 120px; border: none; overflow: hidden;" scrolling="no"></iframe>
+        <div class="control-group">
+          <label class="control-label">Color de Acento / Texto:</label>
+          <input type="color" id="custom-accent" value="#00f2fe" oninput="updateOverlayPreviewUrl()"
+            class="color-picker-input">
+        </div>
+
+        <div class="control-group">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label class="control-label">Transparencia del Fondo:</label>
+            <span style="font-size: 12px; color: var(--accent-cyan); font-weight: 600;"
+              id="opacity-val-label">92%</span>
+          </div>
+          <input type="range" id="custom-opacity" min="0" max="100" value="92" oninput="updateOverlayPreviewUrl()"
+            style="width: 100%; accent-color: var(--accent-cyan); cursor: pointer;">
+        </div>
+
+        <div class="control-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="custom-hidelabel" onchange="updateOverlayPreviewUrl()"> Ocultar encabezado
+            "Sonando en Spotify"
+          </label>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">URL del Navegador para OBS:</label>
+          <div class="url-copy-box">
+            <input type="text" id="overlay-custom-url" readonly value="http://127.0.0.1:3000/overlay" class="url-input">
+            <button class="btn btn-primary" onclick="copyOverlayUrl('overlay-custom-url', this)">Copiar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vista Previa -->
+      <div class="card preview-card">
+        <div class="card-title">Vista Previa en Vivo</div>
+        <p class="preview-hint">Resolución en OBS: 500 x 150 px</p>
+        <div class="preview-stage">
+          <iframe id="overlay-preview-iframe" src="/overlay" class="preview-iframe" scrolling="no"></iframe>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- SECCIÓN 2: SUBTÍTULOS DE VOZ -->
+  <div class="overlay-tab-content" id="subtitles-tab">
+    <div class="card">
+      <div class="card-title">Overlay de Subtítulos (TTS)</div>
+      <p style="font-size: 13px; color: var(--text-secondary);">
+        Widget dedicado exclusivamente a los subtítulos generados por lectura de texto a voz.
+      </p>
+      <div class="url-copy-box" style="margin-top: 12px;">
+        <input type="text" readonly value="http://127.0.0.1:3000/overlay?hideSpotify=true" class="url-input">
+        <button class="btn btn-primary" onclick="copyOverlayUrl(this.previousElementSibling, this)">Copiar URL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3: ALERTAS DE CHAT -->
+  <div class="overlay-tab-content" id="alerts-tab">
+    <div class="card">
+      <div class="card-title">Overlay de Alertas de Chat</div>
+      <p style="font-size: 13px; color: var(--text-secondary);">
+        Alertas emergentes personalizadas cuando se ejecuten comandos en tu chat de Twitch.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="card preview-card" style="position: sticky; top: 0;">
+  <div class="card-title">Vista Previa en Tiempo Real</div>
+  <p class="preview-hint">Se ajusta dinámicamente a tu configuración</p>
+  <div class="preview-stage" style="height: 260px;">
+    <iframe id="follower-preview-iframe" src="/alert-follower?preview=true" class="preview-iframe"
+      style="height: 240px;" scrolling="no"></iframe>
+  </div>
+  <button class="btn btn-primary" style="margin-top: 14px; font-size: 12px;"
+    onclick="refreshFollowerPreview()">Replantear Vista Previa</button>
+</div>
+</div>
+</div>
 </div>
