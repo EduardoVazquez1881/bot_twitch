@@ -1,0 +1,32 @@
+# Archivos de Entorno Privados
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Tokens de Sesión OAuth (¡MUY CONFIDENCIALES!)
+tokens/
+*.json
+!package.json
+!package-lock.json
+
+# Archivos de Registro / Logs
+logs/
+*.log
+
+# Certificados SSL / Llaves Privadas
+certs/
+*.pem
+*.crt
+*.key
+
+# Módulos de Node y Caché
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db
